@@ -1,0 +1,13 @@
+# Installation-Guides
+This repository contains a set of install and basic-use guides for a variety of database / data management and manipulation tools. 
+
+The guides are written by the Research Methods Support team for the Collaborative Crop Research Programme. 
+
+## Dev Notes
+
+**2018-10-31:** We're using Github mainly as a collaboration tool, to make it easier for the RMS team to collaborate on building these guides. Github can also be a good way of sharing the installation guides, although eventually these should be put somewhere else (in our main Resources Repository) to allow people unfamiliar with Github to easily access them. 
+
+The master branch should ideally be kept for completed guides. We have a 'drafts' branch, which exists to save incomplete and un-reviewed documents.
+
+All the documents here are written in Markdown. I recommend [Pandoc](https://pandoc.org/) as a good way of converting markdown files to pdf. It embeds the images linked in the format `![](image-name.png)` (Like in the Heidi and MySQL installation guide). I think there's also a way of pre-configuring styles to get nicer fonts and stuff - there's probably some way of using latex templates or something like that...  (if anyone has any exmamples of formatting pdfs with pandoc, please get in touch!)
+
