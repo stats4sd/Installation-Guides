@@ -1,2 +1,4 @@
 name: Statistics for Sustainable Development
 markdown: kramdown
+
+theme: jekyll-theme-dinky
