@@ -1,0 +1,10 @@
+docs_list_title: Guides
+docs:
+  - title: Google Cloud
+    url: guides/cloud-sql
+
+  - title: Heidi
+    url: guides/heidi
+
+  - title: MySQL Installation
+    url: guides/mysql

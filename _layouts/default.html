@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  </head>
+  <body>
+    <nav>
+      <h2>{{ site.data.pagelist.docs_list_title }}</h2>
+        <ul>
+          {% for item in site.data.pagelist.docs %}
+              <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+    </nav>
+    <div class="container">
+      {{ content }}
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="mailto:support@stats4sd.org">email</a></li>
+        <li>
+          <a href="https://github.com/stats4sd">github.com/stats4sd</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,6 @@
 name: Statistics for Sustainable Development
 markdown: kramdown
-
-theme: jekyll-theme-dinky
+repository: stats4sd/Installation-Guides
+theme: minima
+plugins:
+  - "jekyll-github-metadata"
