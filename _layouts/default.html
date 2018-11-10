@@ -17,20 +17,24 @@
     " />
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">Stats4SD</div>
-      <div class="header__text">Data Flow Toolkit</div>
+    <header>
+      <div class="header__container full-site-width">
+        <div class="header__logo">Stats4SD</div>
+        <div class="header__text">Data Flow Toolkit</div>
+      </div>
     </header>
-    <nav class="nav--top">
-      {% for section in site.data.pagesMeta.sections %}
-      <a
-        href="{{ section.startUrl | relative_url }}"
-        alt="{{ section.title }}"
-        >{{ section.title }}</a
-      >
-      {% endfor %}
+    <nav class="nav__container">
+      <div class="nav--top full-site-width">
+        {% for section in site.data.pagesMeta.sections %}
+        <a
+          href="{{ section.startUrl | relative_url }}"
+          alt="{{ section.title }}"
+          >{{ section.title }}</a
+        >
+        {% endfor %}
+      </div>
     </nav>
-    <div class="main-content--container">
+    <div class="main-content--container full-site-width">
       <nav class="main-content--sidebar">
         {% for page in site.data.pagesMeta.sectionPages[page.section] %}
         <a href="{{ page.url | relative_url }}" alt="{{ page.title }}">{{
