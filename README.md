@@ -6,6 +6,13 @@ The guides are written by the Research Methods Support team for the Collaborativ
 
 ## Dev Notes
 
+### Adding Pages
+
+Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guiders/GoogleCloud)
+To link a page within the existing navigation system it should be added to \_data/pagelist.yaml.
+
+### General Updates
+
 **2018-11-08:** We are trialling display of the site through github pages and jekyll. To preview locally [install jekyll](https://jekyllrb.com/docs/installation) and then run `bundle install` to install dependecies. Preview the site with:
 
 ```

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Google Cloud SQL
-permalink: /guides/cloud-sql
+permalink: /tools/cloud-sql
 ---
 
 # Google Cloud SQL
