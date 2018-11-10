@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 3em;
+  display: flex;
+  line-height: 3em;
+}
+.header__text {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.header__logo {
+  margin-left: 1em;
+  color: #d2232a;
+  font-weight: bold;
+}
+
+.nav--top {
+  background-color: rgba(210, 35, 42, 0.1);
+  height: 5em;
+  line-height: 5em;
+  margin-bottom: 2em;
+}
+.nav--top > a {
+  text-decoration: none;
+  margin: 0 0 0 1em;
+}
+.main-content--container {
+  display: flex;
+  margin-bottom: 4em;
+}
+.main-content--sidebar {
+  width: 10em;
+  margin: 0 1em;
+  padding: 1em;
+}
+.main-content--sidebar > a {
+  margin-bottom: 1em;
+  display: block;
+  text-decoration: none;
+}
+.main-content--content {
+  flex: 1;
+}
+
+footer {
+  background-color: grey;
+  width: 100%;
+  position: fixed;
+  height: 2em;
+  line-height: 2em;
+  left: 0;
+  bottom: 0;
+  padding: 0 1em;
+  color: rgba(255, 255, 255, 0.9);
+}

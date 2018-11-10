@@ -1,5 +1,6 @@
 ---
 layout: default
+section: Tools
 title: Google Cloud SQL
 permalink: /tools/cloud-sql
 ---
