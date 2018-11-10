@@ -2,28 +2,33 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/css/typography.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/layout.css" />
   </head>
   <body>
-    <nav>
-      <h2>{{ site.data.pagelist.docs_list_title }}</h2>
-        <ul>
-          {% for item in site.data.pagelist.docs %}
-              <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
+    <header class="header">
+      <div class="header__logo">Stats4SD</div>
+      <div class="header__text">Data Flow Toolkit</div>
+    </header>
+    <nav class="nav--top">
+      {% for section in site.data.pagesMeta.sections %}
+      <a href="{{ section.startUrl }}" alt="{{ section.title }}">{{
+        section.title
+      }}</a>
+      {% endfor %}
     </nav>
-    <div class="container">
-      {{ content }}
-      </div>
+    <div class="main-content--container">
+      <nav class="main-content--sidebar">
+        {% for page in site.data.pagesMeta.sectionPages[page.section] %}
+        <a href="{{ page.url }}" alt="{{ page.title }}">{{ page.title }}</a> {%
+        endfor %}
+      </nav>
+      <div class="main-content--content">{{ content }}</div>
     </div>
-    <footer>
-      <ul>
-        <li><a href="mailto:support@stats4sd.org">email</a></li>
-        <li>
-          <a href="https://github.com/stats4sd">github.com/stats4sd</a>
-        </li>
-      </ul>
-    </footer>
+    <footer>Statistics for Sustainable Development</footer>
   </body>
 </html>

@@ -1,0 +1,27 @@
+sections:
+  - title: Home
+    startUrl: /
+  - title: Tools
+    startUrl: /tools/cloud-sql
+  - title: Concepts
+    startUrl: /tools/cloud-sql
+    pages:
+  - title: Examples
+    startUrl: /tools/cloud-sql
+    pages:
+
+sectionPages:
+  Home: []
+  Tools:
+    - title: Google Cloud
+      url: /tools/cloud-sql
+    - title: Heidi
+      url: /tools/heidi
+    - title: MySQL Installation
+      url: /tools/mysql
+  Concepts:
+    - title: Page 1
+      url: /concepts/page1
+  Examples:
+    - title: Page 1
+      url: /examples/page1
