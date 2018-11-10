@@ -6,10 +6,27 @@ The guides are written by the Research Methods Support team for the Collaborativ
 
 ## Dev Notes
 
+### Previewing Locally
+
+`bundle exec jekyll server`
+navigate to: http://localhost:4000/Installation-Guides/
+
 ### Adding Pages
 
 Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guiders/GoogleCloud)
 To link a page within the existing navigation system it should be added to \_data/pagelist.yaml.
+
+### Handling URLs
+
+Deploying to github organisation repo adds complication that docs appear on /repo-name/ url, messing up links. Can resolve using
+`relative_url` filter, e.g.
+
+```
+<link href="{{ "/assets/css/style.css" | relative_url }}" rel="stylesheet">
+
+```
+
+https://jekyllrb.com/docs/github-pages/#project-page-url-structure
 
 ### Troubleshooting
 
@@ -23,6 +40,126 @@ see http://talk.jekyllrb.com/t/fixing-vscode-scss-linting-errors-on-front-matter
 
 ```
 bundle exec jekyll serve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
