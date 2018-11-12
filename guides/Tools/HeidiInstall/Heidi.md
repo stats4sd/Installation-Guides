@@ -28,7 +28,7 @@ We recommend not using the root user after the initial setup, but it is useful t
 
 To connect to your [localhost](http://localhost) MySQL Server, open Heidi, and use the following settings to configure your session:
 
-![](Screenshot2018-10-2215-827c490c-b75f-4d82-9578-838f60cf2acb.05.11.png)
+![image](/assets/images/Heidi/Screenshot2018-10-2215-827c490c-b75f-4d82-9578-838f60cf2acb.05.11.png)
 
 - Network type: determines the type of server you're connecting to, and the method of connection. Use TCP/IP for localhost.
 - Hostname: the location of the host. 127.0.0.1 is a specific IP that refers to your local machine.
@@ -60,7 +60,7 @@ You can create any number of databases in your server. To create a new database,
 
 For example, look at the code used to create the database:
 
-![](Screenshot2018-10-2216-ae0b09aa-24bf-495b-b567-4c7430f2f473.13.20.png)
+![image](/assets/images/Heidi/Screenshot2018-10-2216-ae0b09aa-24bf-495b-b567-4c7430f2f473.13.20.png)
 
 ## 2. User account management:
 
@@ -82,12 +82,12 @@ This screen shows all the user accounts on the current server. If you created a 
 - Click save
 - If you are interested, you can also see the code used to create that user:
 
-  ![](Screenshot2018-10-2216-61857b72-537d-42f8-83db-d41d69fa57c7.20.01.png)
+  ![image](/assets/images/Heidi/Screenshot2018-10-2216-61857b72-537d-42f8-83db-d41d69fa57c7.20.01.png)
 
 - Right-click on the connection name in the left panel, and choose "disconnect".
 - Now, we will setup a new connection using our new user. Create a new session, and use the username and password for your new user:
 
-  ![](Screenshot2018-10-2216-719c3002-a78a-4051-83dd-d0f9c33c14f4.22.05.png)
+  ![image](/assets/images/Heidi/Screenshot2018-10-2216-719c3002-a78a-4051-83dd-d0f9c33c14f4.22.05.png)
 
 - Save and open this new connection. You will see your new database on the left. You will also see the information_schema database, which is visible to everyone, but read-only to anyone without root access.
 
