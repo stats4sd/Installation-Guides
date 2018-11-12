@@ -19,6 +19,8 @@ sectionPages:
       url: /tools/heidi
     - title: MySQL Installation
       url: /tools/mysql
+    - title: Voyager
+      url: /tools/voyager
   Concepts:
     - title: Page 1
       url: /concepts/page1
