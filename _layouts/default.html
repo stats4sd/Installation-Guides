@@ -42,7 +42,16 @@
         }}</a>
         {% endfor %}
       </nav>
-      <div class="main-content--content">{{ content }}</div>
+      <div class="main-content--content">
+        <div style="float:right">
+          <a
+            target="_blank"
+            href="{{ site.github.repository_url }}/tree/master/{{page.path}}"
+            >Edit on GitHub</a
+          >
+        </div>
+        <div>{{ content }}</div>
+      </div>
     </div>
     <footer>
       <div style="margin-left:1em">Statistics for Sustainable Development</div>
