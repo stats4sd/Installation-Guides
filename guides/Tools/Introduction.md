@@ -1,7 +1,7 @@
 ---
 layout: default
 section: Tools
-title: Tools
+title: Introduction
 permalink: /tools
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: default
-section: Examples
+section: CaseStudies
 title: Farmer Plot Trials
-permalink: /examples/farmer-plot-trials
+permalink: /case-study/farmer-plot-trials
 ---
 
 # Farmer Plot Trials

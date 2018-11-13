@@ -1,7 +1,7 @@
 ---
 layout: default
 section: Tools
-title: My Title
+title: Voyager
 permalink: /tools/voyager
 ---
 
