@@ -4,3 +4,15 @@ body {
 h1 {
   margin-top: 0;
 }
+.main-content--sidebar > a > span.active {
+  font-weight: bold;
+}
+.main-content--sidebar > a.disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: gray;
+}
+.sidebar__link--coming-soon {
+  font-style: italic;
+}

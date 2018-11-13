@@ -1,43 +1,49 @@
 sections:
   - title: Home
     startUrl: /
-  - title: Tools
-    startUrl: /tools
   - title: Concepts
     startUrl: /concepts
     pages:
-  - title: Examples
-    startUrl: /examples/farmer-plot-trials
+  - title: Tools
+    startUrl: /tools
+  - title: Case Study
+    startUrl: /case-study/farmer-plot-trials
     pages:
 
 sectionPages:
   Home: []
   Concepts:
-    - title: Introduction
+    - title: Data Flow Concepts
       url: /concepts/introduction
     - title: Why Databases?
       url: /concepts/introduction
+      disabled: true
     - title: Database Setup
       url: /concepts/introduction
+      disabled: true
     - title: Working With Data Structures
       url: /concepts/introduction
+      disabled: true
     - title: Organising Efficient Data Flow
       url: /concepts/introduction
+      disabled: true
     - title: Making Data Available
       url: /concepts/introduction
+      disabled: true
     - title: Building Outputs
       url: /concepts/introduction
+      disabled: true
   Tools:
     - title: Introduction
       url: /tools
-    - title: Google Cloud
+    - title: Google Cloud SQL
       url: /tools/cloud-sql
     - title: Heidi
       url: /tools/heidi
-    - title: MySQL Installation
+    - title: MySQL
       url: /tools/mysql
     - title: Voyager
       url: /tools/voyager
-  Examples:
+  CaseStudies:
     - title: Introduction
-      url: /examples/farmer-plot-trials/introduction
+      url: /case-study/farmer-plot-trials/introduction
