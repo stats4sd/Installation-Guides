@@ -39,12 +39,12 @@ body {
   display: flex;
   margin-bottom: 4em;
 }
-.main-content--sidebar {
+.main-content__sidebar {
   width: 10em;
   margin: 3.67em 1em 0 1em;
   padding: 1em;
 }
-.main-content--sidebar > a {
+.main-content__sidebar > a {
   margin-bottom: 1em;
   display: block;
   text-decoration: none;

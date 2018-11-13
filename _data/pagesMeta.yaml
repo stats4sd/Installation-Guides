@@ -3,12 +3,10 @@ sections:
     startUrl: /
   - title: Concepts
     startUrl: /concepts
-    pages:
   - title: Tools
     startUrl: /tools
   - title: Case Study
     startUrl: /case-study/farmer-plot-trials
-    pages:
 
 sectionPages:
   Home: []
@@ -36,14 +34,20 @@ sectionPages:
   Tools:
     - title: Introduction
       url: /tools
-    - title: Google Cloud SQL
-      url: /tools/cloud-sql
     - title: Heidi
       url: /tools/heidi
     - title: MySQL
       url: /tools/mysql
     - title: Voyager
       url: /tools/voyager
+      subsections:
+        - title: Subsection 1
+          url: /subsection1
+    - title: Google Cloud SQL
+      url: /tools/cloud-sql
+    - title: Google Data Studio
+      url: /tools/google-data-studio
+      disabled: true
   CaseStudies:
     - title: Introduction
       url: /case-study/farmer-plot-trials/introduction

@@ -4,10 +4,10 @@ body {
 h1 {
   margin-top: 0;
 }
-.main-content--sidebar > a > span.active {
+.main-content__sidebar > a > span.active {
   font-weight: bold;
 }
-.main-content--sidebar > a.disabled {
+.main-content__sidebar > a.disabled {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
@@ -15,4 +15,7 @@ h1 {
 }
 .sidebar__link--coming-soon {
   font-style: italic;
+}
+.sidebar__subsection__link {
+  padding-left: 10px;
 }
