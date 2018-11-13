@@ -41,8 +41,18 @@ sectionPages:
     - title: Voyager
       url: /tools/voyager
       subsections:
-        - title: Subsection 1
-          url: /subsection1
+        - title: What is it
+          type: "hash"
+          url: "#what"
+        - title: Why use it
+          type: "hash"
+          url: "#why"
+        - title: How to install
+          type: "hash"
+          url: "#install"
+        - title: Further references
+          type: "hash"
+          url: "#references"
     - title: Google Cloud SQL
       url: /tools/cloud-sql
     - title: Google Data Studio

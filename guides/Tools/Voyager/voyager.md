@@ -7,7 +7,7 @@ permalink: /tools/voyager
 
 # Voyager
 
-# What is it?
+# What is it? {#what}
 
 Voyager is a data exploration tool to help create and disover visualisations for your data.
 
@@ -16,13 +16,13 @@ specifying for example a variable for the x-axis and seeing different ways to re
 
 ![image](/assets/images/voyager/screenshot1.png)
 
-# Why use it?
+# Why use it? {#why}
 
 - It is quick to add data from a csv file
 - You can create graphs which cannot be made easily in excel
 - Suggested visualisations can help to identify patterns in the data that you might not have noticed
 
-# How to Install
+# How to Install {#install}
 
 ### Online
 
@@ -40,7 +40,7 @@ Follow the link below to view an example of working with the tool
 
 ### [Example 1 - Analysis of plot yield data](example1)
 
-# Further References
+# Further References {#references}
 
 - [University of Washington Data Lab Site](https://idl.cs.washington.edu/papers/voyager)
 

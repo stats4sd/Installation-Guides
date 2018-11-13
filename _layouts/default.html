@@ -61,10 +61,18 @@
         </a>
         <!-- Sub sections (show on active page only) -->
         {% if sectionIsActive %} {% for subsection in sectionPage.subsections %}
+        <!-- different behaviour for # links and / nav links -->
+        {% if subsection.type=='hash' %}
         <a
-          href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
-          class="sidebar__subsection__link"
-        >
+        href="{{ subsection.url }}"
+        class="sidebar__subsection__link"
+      >
+        {% else %}
+        <a
+        href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
+        class="sidebar__subsection__link"
+      >
+        {% endif %}
           <span>- {{ subsection.title }}</span>
         </a>
         {% endfor %} {% endif %} {% endif %} {% endfor %}
