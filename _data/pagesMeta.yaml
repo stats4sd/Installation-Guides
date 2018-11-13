@@ -2,17 +2,34 @@ sections:
   - title: Home
     startUrl: /
   - title: Tools
-    startUrl: /tools/cloud-sql
+    startUrl: /tools
   - title: Concepts
-    startUrl: /tools/cloud-sql
+    startUrl: /concepts
     pages:
   - title: Examples
-    startUrl: /tools/cloud-sql
+    startUrl: /examples/farmer-plot-trials
     pages:
 
 sectionPages:
   Home: []
+  Concepts:
+    - title: Introduction
+      url: /concepts/introduction
+    - title: Why Databases?
+      url: /concepts/introduction
+    - title: Database Setup
+      url: /concepts/introduction
+    - title: Working With Data Structures
+      url: /concepts/introduction
+    - title: Organising Efficient Data Flow
+      url: /concepts/introduction
+    - title: Making Data Available
+      url: /concepts/introduction
+    - title: Building Outputs
+      url: /concepts/introduction
   Tools:
+    - title: Introduction
+      url: /tools
     - title: Google Cloud
       url: /tools/cloud-sql
     - title: Heidi
@@ -21,9 +38,6 @@ sectionPages:
       url: /tools/mysql
     - title: Voyager
       url: /tools/voyager
-  Concepts:
-    - title: Page 1
-      url: /concepts/page1
   Examples:
-    - title: Page 1
-      url: /examples/page1
+    - title: Introduction
+      url: /examples/farmer-plot-trials/introduction

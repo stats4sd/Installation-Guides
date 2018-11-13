@@ -8,7 +8,7 @@ The guides are written by the Research Methods Support team for the Collaborativ
 
 ### Previewing Locally
 
-`bundle exec jekyll server`
+`bundle exec jekyll serve`
 navigate to: http://localhost:4000/Installation-Guides/
 
 ### Adding Pages
