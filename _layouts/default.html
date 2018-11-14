@@ -15,6 +15,10 @@
       "/assets/css/layout.css" | relative_url
     }}
     " />
+    <!-- analytics tracking -->
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
   </head>
   <body>
     <!-- Main Header -->
