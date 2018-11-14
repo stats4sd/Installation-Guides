@@ -22,4 +22,11 @@ It builds the link in the usual way, e.g.
 Images should be stored in assets folder and can be put inline as:
 ![image](/assets/images/Stats4SD_red.png)
 
-By default they will fill the page width, so to display smaller upload smaller images
+By default they will fill the page width, so to display either upload a smaller image or use one of the following classes (will show when rendered to html):
+
+large - 75%
+medium - 50%
+small - 25%
+
+e.g.
+![image](/assets/images/Stats4SD_red.png){:class="small"}

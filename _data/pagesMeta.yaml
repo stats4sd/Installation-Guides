@@ -34,10 +34,17 @@ sectionPages:
   Tools:
     - title: Introduction
       url: /tools
-    - title: Heidi
-      url: /tools/heidi
+    - title: ODK
+      url: /tools/odk
+      disabled: true
+    - title: Open Refine
+      url: /tools/open-refine
     - title: MySQL
       url: /tools/mysql
+    - title: Heidi
+      url: /tools/heidi
+    - title: Google Cloud SQL
+      url: /tools/cloud-sql
     - title: Voyager
       url: /tools/voyager
       subsections:
@@ -53,8 +60,6 @@ sectionPages:
         - title: Further references
           type: "hash"
           url: "#references"
-    - title: Google Cloud SQL
-      url: /tools/cloud-sql
     - title: Google Data Studio
       url: /tools/google-data-studio
       disabled: true

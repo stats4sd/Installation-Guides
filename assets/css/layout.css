@@ -77,6 +77,16 @@ img.section-image {
   margin: 0 1em 3em 0;
 }
 
+img.size--large {
+  width: 75%;
+}
+img.size--medium {
+  width: 50%;
+}
+img.size--small {
+  width: 25%;
+}
+
 footer {
   background-color: grey;
   width: 100%;

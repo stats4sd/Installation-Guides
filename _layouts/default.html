@@ -48,7 +48,7 @@
         {% if sectionPage.disabled %}
         <a href="#" alt="page coming soon" class="disabled">
           <div>{{ sectionPage.title }}</div>
-          <div class="sidebar__link--coming-soon">coming soon</div>
+          <!-- <div class="sidebar__link--coming-soon">coming soon</div> -->
         </a>
         {% else %}
         <!-- render nav links -->
@@ -85,7 +85,7 @@
           href="{{ site.github.repository_url }}/tree/master/{{page.path}}"
           >
         <div class="edit__container">
-            <img class="edit__image" src="assets/images/edit.svg">
+            <img class="edit__image" src="/assets/images/edit.svg">
             <span class="edit__text">Edit</span>
         </div>
       </a>

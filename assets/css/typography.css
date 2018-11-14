@@ -23,7 +23,7 @@ a.active {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
-  color: gray;
+  color: #bdbdbd;
 }
 .sidebar__link--coming-soon {
   font-style: italic;
