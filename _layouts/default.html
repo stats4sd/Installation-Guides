@@ -79,13 +79,15 @@
       </nav>
       <!-- Page Content -->
       <div class="main-content--content">
-        <div style="float:right">
           <a
-            target="_blank"
-            href="{{ site.github.repository_url }}/tree/master/{{page.path}}"
-            >Edit on GitHub</a
+          target="_blank"
+          href="{{ site.github.repository_url }}/tree/master/{{page.path}}"
           >
+        <div class="edit__container">
+            <img class="edit__image" src="assets/images/edit.svg">
+            <span class="edit__text">Edit</span>
         </div>
+      </a>
         <div>{{ content }}</div>
       </div>
     </div>

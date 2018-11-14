@@ -54,6 +54,18 @@ body {
   flex: 1;
   max-width: 50em;
 }
+.edit__container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  opacity: 0.4;
+}
+.edit__image {
+  height: 1em;
+  position: relative;
+  top: 3px;
+  margin-right: 4px;
+}
 
 img {
   max-width: 100%;
