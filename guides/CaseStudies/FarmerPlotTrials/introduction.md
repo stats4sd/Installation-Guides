@@ -5,4 +5,4 @@ title: Farmer Plot Trials
 permalink: /case-study/farmer-plot-trials
 ---
 
-# Farmer Plot Trials
+# Case Study: Farmer Plot Trials
