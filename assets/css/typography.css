@@ -28,3 +28,9 @@ a:visited {
 .sidebar__subsection__link {
   padding-left: 10px;
 }
+
+/* when images are floated and are taller than text we want to limit the next section starting alongside the same image */
+.page.Introduction > h3,
+.page.Introduction > h2 {
+  clear: both;
+}
