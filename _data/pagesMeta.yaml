@@ -58,6 +58,6 @@ sectionPages:
     - title: Google Data Studio
       url: /tools/google-data-studio
       disabled: true
-  CaseStudies:
+  Case Study:
     - title: Introduction
       url: /case-study/farmer-plot-trials/introduction

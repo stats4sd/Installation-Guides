@@ -1,6 +1,6 @@
 ---
 layout: default
-section: CaseStudies
+section: Case Study
 title: Farmer Plot Trials
 permalink: /case-study/farmer-plot-trials
 ---

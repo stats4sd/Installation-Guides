@@ -8,6 +8,9 @@ a,
 a:visited {
   color: black;
 }
+a.active {
+  font-weight: bold;
+}
 
 .primary {
   color: #d2232a;

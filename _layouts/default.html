@@ -31,6 +31,7 @@
         <a
           href="{{ section.startUrl | relative_url }}"
           alt="{{ section.title }}"
+          class="{% if section.title==page.section %}active{% endif %}"
           >{{ section.title }}</a
         >
         {% endfor %}
