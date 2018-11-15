@@ -39,27 +39,19 @@ sectionPages:
       disabled: true
     - title: Open Refine
       url: /tools/open-refine
+      showNav: true
     - title: MySQL
       url: /tools/mysql
+      showNav: true
     - title: Heidi
       url: /tools/heidi
+      showNav: true
     - title: Google Cloud SQL
       url: /tools/cloud-sql
+      showNav: true
     - title: Voyager
       url: /tools/voyager
-      subsections:
-        - title: What is it
-          type: "hash"
-          url: "#what"
-        - title: Why use it
-          type: "hash"
-          url: "#why"
-        - title: How to install
-          type: "hash"
-          url: "#install"
-        - title: Further references
-          type: "hash"
-          url: "#references"
+      showNav: true
     - title: Google Data Studio
       url: /tools/google-data-studio
       disabled: true
