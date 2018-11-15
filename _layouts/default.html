@@ -46,7 +46,7 @@
       <nav class="main-content__sidebar">
         {% for sectionPage in site.data.pagesMeta.sectionPages[page.section] %}
         <!-- calculate if section is currently active and assign variable -->
-        {% if sectionPage.title==page.title %} {% assign sectionIsActive = true
+        {% if sectionPage.title==page.title or sectionPage.title==page.subsection %} {% assign sectionIsActive = true
         %} {% else %} {% assign sectionIsActive = false %} {% endif %}
         <!-- disable pages marked as disabled -->
         {% if sectionPage.disabled %}
@@ -65,22 +65,25 @@
           </span>
         </a>
         <!-- Sub sections (show on active page only) -->
-        {% if sectionIsActive %} {% for subsection in sectionPage.subsections %}
-        <!-- different behaviour for # links and / nav links -->
-        {% if subsection.type=='hash' %}
-        <a
-        href="{{ subsection.url }}"
-        class="sidebar__subsection__link"
-      >
-        {% else %}
-        <a
-        href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
-        class="sidebar__subsection__link"
-      >
-        {% endif %}
-          <span>- {{ subsection.title }}</span>
-        </a>
-        {% endfor %} {% endif %} {% endif %} {% endfor %}
+        {% if sectionIsActive %}
+        <ul class="sidebar__subsection">
+          {% for subsection in sectionPage.subsections %}
+          <!-- different behaviour for # links and / nav links -->
+          {% if subsection.type=='hash' %}
+          <a
+          href="{{ subsection.url }}"
+        >
+          {% else %}
+          <a
+          href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
+          class="{% if subsection.title==page.title %}active{% endif %}"
+        >
+          {% endif %}
+            <li>{{ subsection.title }}</li>
+          </a>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endif %} {% endfor %}
       </nav>
       <!-- Page Content -->
       <div class="main-content--content">

@@ -1,13 +1,16 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 h1 {
   margin-top: 0;
 }
+
 a,
 a:visited {
   color: black;
 }
+
 a.active {
   font-weight: bold;
 }
@@ -19,20 +22,33 @@ a.active {
 .main-content__sidebar > a > span.active {
   font-weight: bold;
 }
+
 .main-content__sidebar > a.disabled {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
   color: #bdbdbd;
 }
+
 .sidebar__link--coming-soon {
   font-style: italic;
 }
-.sidebar__subsection__link {
+
+.sidebar__subsection {
+  padding: 0 1.5em;
+  margin: 0;
+  list-style-type: circle;
+}
+
+.sidebar__subsection > a {
   padding-left: 10px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1em;
 }
 
 /* when images are floated and are taller than text we want to limit the next section starting alongside the same image */
+
 .page.Introduction > h3,
 .page.Introduction > h2 {
   clear: both;

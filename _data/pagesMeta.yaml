@@ -64,5 +64,23 @@ sectionPages:
       url: /tools/google-data-studio
       disabled: true
   Case Study:
-    - title: Introduction
-      url: /case-study/farmer-plot-trials/introduction
+    - title: Overview
+      url: /case-study
+    - title: Farmer Plot Trials
+      url: /case-study/farmer-plot-trials
+      subsections:
+        - title: Creating a database
+          type: "path"
+          url: "/step-1"
+        - title: Importing the raw data
+          type: "path"
+          url: "/step-2"
+        - title: Cleaning the data
+          type: "path"
+          url: "/step-3"
+        - title: Extracting data for analysis
+          type: "path"
+          url: "/step-4"
+        - title: Generating outputs
+          type: "path"
+          url: "/step-5"
