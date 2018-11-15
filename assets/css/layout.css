@@ -2,7 +2,11 @@ body {
   margin: 0;
 }
 
-header {
+.full-site-width {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header__container {
   height: 3em;
   display: flex;
   line-height: 3em;
@@ -17,9 +21,11 @@ header {
   color: #d2232a;
   font-weight: bold;
 }
+.nav__container {
+  background-color: rgba(210, 35, 42, 0.1);
+}
 
 .nav--top {
-  background-color: rgba(210, 35, 42, 0.1);
   height: 5em;
   line-height: 5em;
   margin-bottom: 2em;
@@ -27,6 +33,7 @@ header {
 .nav--top > a {
   text-decoration: none;
   margin: 0 0 0 1em;
+  color: black;
 }
 .main-content--container {
   display: flex;
@@ -41,9 +48,15 @@ header {
   margin-bottom: 1em;
   display: block;
   text-decoration: none;
+  color: black;
 }
 .main-content--content {
   flex: 1;
+  max-width: 50em;
+}
+
+img {
+  max-width: 100%;
 }
 
 footer {
