@@ -2,11 +2,11 @@ sections:
   - title: Home
     startUrl: /
   - title: Concepts
-    startUrl: /concepts
+    startUrl: /concepts/introduction
   - title: Tools
-    startUrl: /tools
+    startUrl: /tools/introduction
   - title: Case Study
-    startUrl: /case-study/farmer-plot-trials
+    startUrl: /case-study/overview
 
 sectionPages:
   Home: []
@@ -33,7 +33,7 @@ sectionPages:
       disabled: true
   Tools:
     - title: Introduction
-      url: /tools
+      url: /tools/introduction
     - title: ODK
       url: /tools/odk
       disabled: true
@@ -65,7 +65,7 @@ sectionPages:
       disabled: true
   Case Study:
     - title: Overview
-      url: /case-study
+      url: /case-study/overview
     - title: Farmer Plot Trials
       url: /case-study/farmer-plot-trials
       subsections:
