@@ -23,7 +23,7 @@ _write something about creating a database for production and secure datasets vs
 
 When this network is enabled, you will see a warning, saying this is potentially insecure.
 
-![](/Users/Shared/Dropbox (SSD)/Screenshots/Screenshot 2018-10-26 10.55.24.png)
+![](./Screenshot 2018-10-26 10.55.24.png)
 
 2. Set SSL:
 
