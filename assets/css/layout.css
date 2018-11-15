@@ -39,12 +39,12 @@ body {
   display: flex;
   margin-bottom: 4em;
 }
-.main-content--sidebar {
+.main-content__sidebar {
   width: 10em;
-  margin: 0 1em;
+  margin: 3.67em 1em 0 1em;
   padding: 1em;
 }
-.main-content--sidebar > a {
+.main-content__sidebar > a {
   margin-bottom: 1em;
   display: block;
   text-decoration: none;
@@ -54,9 +54,37 @@ body {
   flex: 1;
   max-width: 50em;
 }
+.edit__container {
+  float: right;
+  display: flex;
+  justify-content: center;
+  opacity: 0.4;
+}
+.edit__image {
+  height: 1em;
+  position: relative;
+  top: 3px;
+  margin-right: 4px;
+}
 
 img {
   max-width: 100%;
+}
+
+img.section-image {
+  width: 100px;
+  float: left;
+  margin: 0 1em 3em 0;
+}
+
+img.size--large {
+  width: 75%;
+}
+img.size--medium {
+  width: 50%;
+}
+img.size--small {
+  width: 25%;
 }
 
 footer {

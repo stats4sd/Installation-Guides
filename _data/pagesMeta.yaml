@@ -1,27 +1,86 @@
 sections:
   - title: Home
     startUrl: /
-  - title: Tools
-    startUrl: /tools/cloud-sql
   - title: Concepts
-    startUrl: /tools/cloud-sql
-    pages:
-  - title: Examples
-    startUrl: /tools/cloud-sql
-    pages:
+    startUrl: /concepts
+  - title: Tools
+    startUrl: /tools
+  - title: Case Study
+    startUrl: /case-study/farmer-plot-trials
 
 sectionPages:
   Home: []
+  Concepts:
+    - title: Data Flow Concepts
+      url: /concepts/introduction
+    - title: Why Databases?
+      url: /concepts/introduction
+      disabled: true
+    - title: Database Setup
+      url: /concepts/introduction
+      disabled: true
+    - title: Working With Data Structures
+      url: /concepts/introduction
+      disabled: true
+    - title: Organising Efficient Data Flow
+      url: /concepts/introduction
+      disabled: true
+    - title: Making Data Available
+      url: /concepts/introduction
+      disabled: true
+    - title: Building Outputs
+      url: /concepts/introduction
+      disabled: true
   Tools:
-    - title: Google Cloud
-      url: /tools/cloud-sql
+    - title: Introduction
+      url: /tools
+    - title: ODK
+      url: /tools/odk
+      disabled: true
+    - title: Open Refine
+      url: /tools/open-refine
+    - title: MySQL
+      url: /tools/mysql
     - title: Heidi
       url: /tools/heidi
-    - title: MySQL Installation
-      url: /tools/mysql
-  Concepts:
-    - title: Page 1
-      url: /concepts/page1
-  Examples:
-    - title: Page 1
-      url: /examples/page1
+    - title: Google Cloud SQL
+      url: /tools/cloud-sql
+    - title: Voyager
+      url: /tools/voyager
+      subsections:
+        - title: What is it
+          type: "hash"
+          url: "#what"
+        - title: Why use it
+          type: "hash"
+          url: "#why"
+        - title: How to install
+          type: "hash"
+          url: "#install"
+        - title: Further references
+          type: "hash"
+          url: "#references"
+    - title: Google Data Studio
+      url: /tools/google-data-studio
+      disabled: true
+  Case Study:
+    - title: Overview
+      url: /case-study
+    - title: Farmer Plot Trials
+      url: /case-study/farmer-plot-trials
+      subsections:
+        - title: Creating a database
+          type: "path"
+          url: "/step-1"
+        - title: Importing the raw data
+          type: "path"
+          url: "/step-2"
+        - title: Cleaning the data
+          type: "path"
+          url: "/step-3"
+        - title: Extracting data for analysis
+          type: "path"
+          url: "/step-4"
+        - title: Generating outputs
+          type: "path"
+          url: "/step-5"
