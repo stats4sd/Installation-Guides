@@ -65,8 +65,15 @@
           </span>
         </a>
         <!-- Sub sections (show on active page only) -->
-        {% if sectionIsActive and sectionPage.showNav %} {% include
-        navbar-tools-sections.html %} {% endif %} {% endif %} {% endfor %}
+        {% if sectionIsActive and sectionPage.showNav %}
+        <!-- tools page sidebar -->
+        {% if page.section=="Tools" %}{% include sidebar-tools.html %}
+        <!-- default sidebar -->
+        {% else %} {% include sidebar-default.html sectionPage=sectionPage %} {%
+        endif %}
+
+        <!---->
+        {% endif %} {% endif %} {% endfor %}
       </nav>
       <!-- Page Content -->
       <div class="main-content--content">

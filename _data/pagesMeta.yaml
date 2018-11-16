@@ -60,6 +60,7 @@ sectionPages:
       url: /case-study/overview
     - title: Farmer Plot Trials
       url: /case-study/farmer-plot-trials
+      showNav: true
       subsections:
         - title: Creating a database
           type: "path"
