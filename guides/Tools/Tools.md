@@ -2,7 +2,7 @@
 layout: default
 section: Tools
 title: Introduction
-permalink: /tools
+permalink: /tools/introduction
 ---
 
 # Tools

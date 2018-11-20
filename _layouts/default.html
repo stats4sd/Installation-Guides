@@ -14,11 +14,14 @@
     {{
       "/assets/css/layout.css" | relative_url
     }}
+    " /> <link rel="stylesheet" type="text/css" href="
+    {{
+      "/assets/css/images.css" | relative_url
+    }}
     " />
     <!-- analytics tracking -->
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
+    {% if site.google_analytics and jekyll.environment == 'production' %} {%
+    include analytics.html %} {% endif %}
   </head>
   <body>
     <!-- Main Header -->
@@ -46,7 +49,8 @@
       <nav class="main-content__sidebar">
         {% for sectionPage in site.data.pagesMeta.sectionPages[page.section] %}
         <!-- calculate if section is currently active and assign variable -->
-        {% if sectionPage.title==page.title or sectionPage.title==page.subsection %} {% assign sectionIsActive = true
+        {% if sectionPage.title==page.title or
+        sectionPage.title==page.subsection %} {% assign sectionIsActive = true
         %} {% else %} {% assign sectionIsActive = false %} {% endif %}
         <!-- disable pages marked as disabled -->
         {% if sectionPage.disabled %}
@@ -65,37 +69,27 @@
           </span>
         </a>
         <!-- Sub sections (show on active page only) -->
-        {% if sectionIsActive %}
-        <ul class="sidebar__subsection">
-          {% for subsection in sectionPage.subsections %}
-          <!-- different behaviour for # links and / nav links -->
-          {% if subsection.type=='hash' %}
-          <a
-          href="{{ subsection.url }}"
-        >
-          {% else %}
-          <a
-          href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
-          class="{% if subsection.title==page.title %}active{% endif %}"
-        >
-          {% endif %}
-            <li>{{ subsection.title }}</li>
-          </a>
-          {% endfor %}
-        </ul>
+        {% if sectionIsActive and sectionPage.showNav %}
+        <!-- tools page sidebar -->
+        {% if page.section=="Tools" %}{% include sidebar-tools.html %}
+        <!-- default sidebar -->
+        {% else %} {% include sidebar-default.html sectionPage=sectionPage %} {%
+        endif %}
+
+        <!---->
         {% endif %} {% endif %} {% endfor %}
       </nav>
       <!-- Page Content -->
       <div class="main-content--content">
-          <a
+        <a
           target="_blank"
           href="{{ site.github.repository_url }}/tree/master/{{page.path}}"
-          >
-        <div class="edit__container">
-            <img class="edit__image" src="/assets/images/edit.svg">
+        >
+          <div class="edit__container">
+            <img class="edit__image" src="/assets/images/edit.svg" />
             <span class="edit__text">Edit</span>
-        </div>
-      </a>
+          </div>
+        </a>
         <div class="{{page.title}} page">{{ content }}</div>
       </div>
     </div>

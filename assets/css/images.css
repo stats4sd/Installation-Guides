@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+
+img.section-image {
+  width: 100px;
+  float: left;
+  margin: 0 1em 3em 0;
+}
+
+img.size--large {
+  max-width: 600px;
+}
+img.size--medium-large {
+  max-width: 500px;
+}
+img.size--medium {
+  max-width: 400px;
+}
+img.size--medium-small {
+  max-width: 300px;
+}
+img.size--small {
+  max-width: 200px;
+}
+img.size--x-small {
+  max-width: 100px;
+}
+img.size--xx-small {
+  max-width: 50px;
+}
