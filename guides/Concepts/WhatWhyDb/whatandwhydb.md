@@ -1,3 +1,9 @@
+---
+layout: default
+section: Concepts
+title: Why Databases?
+permalink: /concepts/whatandwhydb
+---
 # Why Databases?
 
 ## What is a database?
