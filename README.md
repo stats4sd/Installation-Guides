@@ -13,7 +13,7 @@ navigate to: http://localhost:4000/Installation-Guides/
 
 ### Adding Pages
 
-Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guiders/GoogleCloud)
+Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guides/GoogleCloud)
 To link a page within the existing navigation system it should be added to \_data/pagelist.yaml.
 
 ### Handling URLs

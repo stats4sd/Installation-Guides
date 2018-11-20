@@ -14,13 +14,12 @@ sectionPages:
     - title: Data Flow Concepts
       url: /concepts/introduction
     - title: Why Databases?
-      url: /concepts/introduction
-      disabled: true
+      url: /concepts/whatandwhydb
     - title: Database Setup
       url: /concepts/introduction
       disabled: true
     - title: Working With Data Structures
-      url: /concepts/introduction
+      url: /concepts/data-structures
       disabled: true
     - title: Organising Efficient Data Flow
       url: /concepts/introduction
