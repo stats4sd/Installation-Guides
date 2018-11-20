@@ -22,7 +22,8 @@ sectionPages:
       disabled: true
     - title: Working With Data Structures
       url: /concepts/data-structures
-      disabled: true
+    - title: Database Relationships
+      url: /concepts/relationships
     - title: Organising Efficient Data Flow
       url: /concepts/introduction
       disabled: true
