@@ -54,7 +54,9 @@ It will run some code in a new window before opening the software in your web br
 
 # Examples
 
-Follow the link below to view an example of working with the tool
+For an example of using the tool view click the link below to view the relevant section of the example case study.
+
+### [Example 1 - Analysis of plot yield data](/case-study/farmer-plot-trials/step-3)
 
 # Further References {#references}
 
