@@ -2,5 +2,6 @@ name: Statistics for Sustainable Development
 markdown: kramdown
 repository: stats4sd/Installation-Guides
 theme: minima
+google_analytics: UA-109151841-2
 plugins:
   - "jekyll-github-metadata"
