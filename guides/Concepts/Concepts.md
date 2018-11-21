@@ -1,11 +1,11 @@
 ---
 layout: default
 section: Concepts
-title: Data Flow Concepts
+title: Databases Concepts
 permalink: /concepts
 ---
 
-# Data Flow Concepts
+# Databases Concepts
 
 Throughout the data flow cycle there are many core concepts that help to ensure our data is treated in a efficient, robust and ethical manner.
 
