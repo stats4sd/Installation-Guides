@@ -26,12 +26,70 @@ Download the following file and open in excel: <a href="/assets/resources/Farmer
 
 ## 3. Connect to your database
 
+If this is your first time using mysql for excel you will need to add a connection to your database.
+Click on **New Connection** and complete the details in the same way as the previous step
+
+![image](/assets/images/MySQL/mysql-for-excel-new-connection.png){:class="size--small"}
+
+![image](/assets/images/MySQL/mysql-for-excel-new-connection-details.png){:class="size--large"}
+
+Finally double click on the connection created to open it
+
+![image](/assets/images/MySQL/mysql-for-excel-connections.png){:class="size--small"}
+
 ## 3. Import the data into MySQL
 
-### a. Trials data
+We will use excel to send data into our database. The first thing we need to do is create a new _schema_, essentially an object that holds information about our database.
 
-### b. Household data
+### a. Create a schema
 
-### c. Plot data
+Click on **Create New Schema**
+
+![image](/assets/images/FarmerTrials/create-schema-1.png){:class="size--small"}
+
+Provide a name and set the collation as **utf8_unicode_ci**
+
+![image](/assets/images/FarmerTrials/create-schema-2.png){:class="size--large"}
+
+Double click the created schema to open
+
+![image](/assets/images/FarmerTrials/create-schema-3.png){:class="size--small"}
+
+### a. Import household info data
+
+The first dataset we will import is the household information. You can find this on the _hh_info_ tab
+
+Select all the data and click **Export Excel Data to New Table**
+
+![image](/assets/images/FarmerTrials/export-data-1.png)
+
+In the window that appears you should be able to keep most of the default settings, however as our data already has a column of _unique_ identifiers (form*ID) we can use this for our \_primary key*
+
+![image](/assets/images/FarmerTrials/export-data-2.png)
+
+If successful you will see the following message
+![image](/assets/images/FarmerTrials/export-data-3.png)
+
+### b. Import plot data
+
+We now need to repeat the process for plot data. It is the same as above except we no longer have a unique identifier, so we will let the database assign one for us
+
+![image](/assets/images/FarmerTrials/export-data-4.png)
+
+![image](/assets/images/FarmerTrials/export-data-5.png)
+
+### c. Trial preference data
+
+Finally we repeat for the preference data received from the trial
+
+![image](/assets/images/FarmerTrials/export-data-6.png)
+
+![image](/assets/images/FarmerTrials/export-data-7.png)
 
 ## 4. Confirm the data is in your database
+
+Once this is complete we should confirm the data is in our database.
+
+Go back to heidi and click on your database. You should see a list of the tables created (if they are not there you might need to click refresh)
+
+![image](/assets/images/FarmerTrials/export-data-8.png)
