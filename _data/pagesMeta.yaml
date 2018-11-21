@@ -7,11 +7,13 @@ sections:
     startUrl: /tools/introduction
   - title: Case Study
     startUrl: /case-study/overview
+  - title: Resources
+    startUrl: /resources
 
 sectionPages:
   Home: []
   Concepts:
-    - title: Data Flow Concepts
+    - title: Database Concepts
       url: /concepts/introduction
     - title: Why Databases?
       url: /concepts/introduction
