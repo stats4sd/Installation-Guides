@@ -15,7 +15,7 @@ This short guide explains how data are stored in SQL, including:
 
 ## MySQL Tables {#mysql-tables}
 
-In MySQL, your data is stored in a collection of tables. You can imagine a table like a single sheet in Excel, or a single .csv file. The variables in your data are the columns, often called 'fields', and the entries are the rows - often called 'records'. So a table of farmers with 4 fields (columns) and 3 records (rows) could look like this:
+In MySQL, your data are stored in a collection of tables. You can imagine a table like a single sheet in Excel, or a single .csv file. The variables in your data are the columns, often called 'fields', and the entries are the rows - often called 'records'. So a table of farmers with 4 fields (columns) and 3 records (rows) could look like this:
 
 | id  | farmer_name | age | community_id |
 | --- | ----------- | --- | ------------ |
