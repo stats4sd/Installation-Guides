@@ -12,7 +12,7 @@ sectionPages:
   Home: []
   Concepts:
     - title: Data Flow Concepts
-      url: /concepts/introduction
+      url: /concepts/
     - title: Why Databases?
       url: /concepts/whatandwhydb
     - title: Database Setup
