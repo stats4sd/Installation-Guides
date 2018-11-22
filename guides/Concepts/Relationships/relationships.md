@@ -23,14 +23,14 @@ To create this in the database, you link 1 field in your secondary table to the 
 **Which is your secondary table?**
 It's the table that relies on the other table. In our example, it doesn't make sense to have a record in `web_accounts` if there isn't a corresponding record in `farmers`. (As a farmer must exist to have a user account on your site!). So, your `web_accounts` table is the secondary table in this example. 
 
->ADD DIAGRAM
+![image](/assets/images/relationships/1-1.jpg)
 
 ### Many to One
 A record in Table 1 is linked to any number of records in Table 2. For example, a farmer can have many plots. 1 record in the `farmers` table can be linked to many records in the `plots` table, so these tables have a many-to-one relationship.
 
 In the database, this is represented in a similar way to one-to-one relationships - by adding a "foreign key" field to your secondary table. In this case, the 'secondary' table is always the 'many' table. So, in the example here, the tables are linked via the `farmer_id` field in the `plots` table. That field tells you which farmer each plot belongs to. One farmer can have many plots, (e.g. Farmer 3 has 2 plots), but a single plot can only belong to one farmer. 
 
->ADD DIAGRAM
+![image](/assets/images/relationships/many-1.jpg)
 
 
 ### Many to Many: 
@@ -41,8 +41,6 @@ This relationship is impossible to represent with just the 2 tables required, bu
 So, how do we model this relationship? We cannot just add a `region_id`  as a foreign key to the `ngos` table, as there could be any number of regions linked to one NGO. We also cannot just add an `ngo_id` as a foriegn key to the `regions` table, because there can be any number of NGOs linked to one region. 
 
 Instead, we create a link table - a table that sits in between the 2 main tables, which acts as the "secondary" table for both. This link table has the 2 columns `ngo_id` and `region_id`. Each record represents 1 line that can be drawn between the 2 main tables. 
-
->ADD DIAGRAM(S)
 
 Now, we have split the many-to-many relationship into 2 many-to-one relationships, which are represented by the foriegn key columns in the link table. In this structure, the link table is the "many" table for both relationships.
 
