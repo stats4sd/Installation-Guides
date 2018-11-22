@@ -18,7 +18,7 @@ The MySQL for Excel extension may have automatically have been installed when yo
 
 ![image](/assets/images/MySQL/mysql-for-excel-toolbar.png)
 
-If it is not there you should open the [MySQL installer](/tools/mysql) and ensure the MySQL for Excel component installer is checked. If this still does not work you can directly download the MySQL for Excel installer <a href="https://dev.mysql.com/downloads/windows/excel/" target="_blank">here</a>
+If it is not there you should open the [MySQL installer](/tools/mysql) and add the MySQL for Excel product (See the [MySQL page](/tools/mysql#InstallExtras) for details). If this still does not work you can directly download the MySQL for Excel installer <a href="https://dev.mysql.com/downloads/windows/excel/" target="_blank">here</a>
 
 ## 2. Open the raw data file in excel
 
@@ -72,7 +72,7 @@ If successful you will see the following message
 
 ### b. Import plot data
 
-We now need to repeat the process for plot data. It is the same as above except we no longer have a unique identifier, so we will let the database assign one for us
+We now need to repeat the process for plot data. It is the same as above except we no longer have a unique identifier, so we will let the database assign one for us:
 
 ![image](/assets/images/FarmerTrials/export-data-4.png)
 
