@@ -63,3 +63,7 @@ This is the account we just gave permissions to
 If this worked successfully you should see the database listed in the column on the left
 
 ![image](/assets/images/Heidi/farmer-trials-db-list.png){:class="size--medium-small"}
+
+## Review and Next Step
+
+Now we have our emtpy database setup and we have confirmed that we can access it.  In the [next step](/case-study/farmer-plot-trials/step-2), we will create some tables and import our raw data.
