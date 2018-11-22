@@ -90,6 +90,11 @@ Finally we repeat for the preference data received from the trial
 
 Once this is complete we should confirm the data is in our database.
 
-Go back to heidi and click on your database. You should see a list of the tables created (if they are not there you might need to click refresh)
+Go back to heidi and click on your database. You should see a list of the tables created (if they are not there you might need to click refresh).
 
 ![image](/assets/images/FarmerTrials/export-data-8.png)
+
+## Review and Next Step
+At this stage, we have all of our data from Excel imported into our database. The data are in 3 tables, which correspond to the 3 worksheets in our Excel file. 
+
+In the [next step](/case-study/farmer-plot-trials/step-3), we will do some data cleaning and create a set of 'processed' data tables that we can use for querying.
