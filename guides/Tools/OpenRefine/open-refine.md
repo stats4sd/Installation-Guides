@@ -20,6 +20,7 @@ It is completely free, and works offline with large datasets
 - You can easily transorm entire columns of data, for example correcting upper/lower case
 - Any operations on your data are logged so you can easily track or undo changes
 - It can support larger datasets and work much more efficiently than excel
+- It can import data directly from an SQL database and export a dataset as a set of SQL code for re-importing into the database.
 
 # How to Install {#install}
 
