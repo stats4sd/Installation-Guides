@@ -34,11 +34,13 @@ There is no official support for using the tool offline, however Stats4SD have c
 
 <a href="https://www.dropbox.com/s/y6r7568eibfepej/datavoyager%202.0.0-alpha.24.exe?dl=1" >Download windows offline version</a>
 
+Note, as this is not officially licenses you will see a warning message when running for the first time. Be assured that the file is safe to run and the warning can be dismissed.
+
 # Examples
 
-Follow the link below to view an example of working with the tool
+For an example of using the tool view click the link below to view the relevant section of the example case study.
 
-### [Example 1 - Analysis of plot yield data](example1)
+### [Example 1 - Analysis of plot yield data](/case-study/farmer-plot-trials/step-5)
 
 # Further References {#references}
 
