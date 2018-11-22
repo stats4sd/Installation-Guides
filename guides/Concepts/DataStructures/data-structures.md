@@ -6,8 +6,12 @@ permalink: /concepts/data-structures
 ---
 
 # Working with Data Structures
+This short guide explains how data are stored in SQL, including:
+ - [the basic structure of tables](#mysql-tables),
+ - [primary keys](#primary-keys),
+ - [common data types](#data-types)
 
-## MySQL Tables
+## MySQL Tables {#mysql-tables}
 In MySQL, your data are stored in a collection of tables. You can imagine a  table like a single sheet in Excel, or a single .csv file. The variables in your data are the columns, often called 'fields', and the entries are the rows - often called 'records'. So a table of farmers with 4 fields (columns) and 3 records (rows) could look like this:
 
 | id | farmer_name | age | community_id |
@@ -16,7 +20,7 @@ In MySQL, your data are stored in a collection of tables. You can imagine a  tab
 |  2 | Joan        |  35 |            3 |
 |  3 | Jake        |  28 |            3 |
 
-The easiest way to create tables is to use an SQL client - you can learn more about clients in the tools section of this pack. You can also create tables directly with an SQL command `CREATE TABLE tblname ( columns )`. For example, to create the above table, you might use:
+The easiest way to create tables is to use an SQL client - you can learn more about clients in the [tools](/tools) section of this pack. You can also create tables directly with an SQL command `CREATE TABLE tblname ( columns )`. For example, to create the above table, use:
 
 ```
 CREATE TABLE farmers (
@@ -29,14 +33,14 @@ CREATE TABLE farmers (
 
 This defines the names and data types for each of the 4 fields. It also defines `id` as the Primary key for the table.
 
-## Primary Keys
+## Primary Keys. {#primary-keys}
 Every table must have a primary key. This is a unique way to identify every record within the table. It is usually a single field, (such as an `id` field), but can sometimes be a combination of different fields. For example, if you have data from different weather stations, you might choose to use the station_id combined with the timestamp of the record to be the primary key, as the combination of these fields will always be unique. 
 
 If you don't have a primary key in your data before entering it into a database, you can create one by creating an INT field with the `AUTO_INREMENT` property. This field will automatically populate with incrementing numbers - the first record will contain "1", the next "2", etc. 
 
 >**IMPORTANT:** Never use something like "Name" as the primary key. Even if you think you're unlikely to find 2 people with identical names in your project, it's still possible. Instead, you should create another variable to be your primary key, such as an `id` integer field. 
 
-## MySQL Data Types
+## MySQL Data Types {#data-types}
 Each field has a data type. This is defined when you create the table, and all the data entered into that field must conform to the same data type. 
 
 There are a lot of different data types, but only a few that you will use regularly. These are: 
