@@ -7,7 +7,7 @@ permalink: /
 
 # Introduction
 
-Welcome to the Stats4SD Data Flow Toolkit. On this site you can find a growing number of practical tutorials and guides for concepts and tools related to data flow.
+Welcome to the Stats4SD Databases Toolkit. On this site you can find a growing number of practical tutorials and guides for concepts and tools related to data flow.
 
 The site is targetted towards work within global development contexts, and provides examples relating to work with small-holder farmers.
 

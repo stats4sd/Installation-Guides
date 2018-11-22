@@ -12,7 +12,7 @@ permalink: /tools/open-refine
 Open Refine is a powerful tool to help with data cleaning.
 
 You can import data from csv, json or even connect to a database and perform various analysis functions to help identify and transform messy data.
-It is completely free, and works offline line with large datasets
+It is completely free, and works offline with large datasets
 
 # Why use it? {#why}
 
@@ -20,6 +20,7 @@ It is completely free, and works offline line with large datasets
 - You can easily transorm entire columns of data, for example correcting upper/lower case
 - Any operations on your data are logged so you can easily track or undo changes
 - It can support larger datasets and work much more efficiently than excel
+- It can import data directly from an SQL database and export a dataset as a set of SQL code for re-importing into the database.
 
 # How to Install {#install}
 
@@ -54,7 +55,9 @@ It will run some code in a new window before opening the software in your web br
 
 # Examples
 
-Follow the link below to view an example of working with the tool
+For an example of using the tool view click the link below to view the relevant section of the example case study.
+
+### [Example 1 - Analysis of plot yield data](/case-study/farmer-plot-trials/step-3)
 
 # Further References {#references}
 

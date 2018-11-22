@@ -2,11 +2,13 @@ sections:
   - title: Home
     startUrl: /
   - title: Concepts
-    startUrl: /concepts
+    startUrl: /concepts/introduction
   - title: Tools
-    startUrl: /tools
+    startUrl: /tools/introduction
   - title: Case Study
-    startUrl: /case-study/farmer-plot-trials
+    startUrl: /case-study/overview
+  - title: Resources
+    startUrl: /resources
 
 sectionPages:
   Home: []
@@ -33,41 +35,34 @@ sectionPages:
       disabled: true
   Tools:
     - title: Introduction
-      url: /tools
+      url: /tools/introduction
     - title: ODK
       url: /tools/odk
       disabled: true
     - title: Open Refine
       url: /tools/open-refine
+      showNav: true
     - title: MySQL
       url: /tools/mysql
+      showNav: true
     - title: Heidi
       url: /tools/heidi
+      showNav: true
     - title: Google Cloud SQL
       url: /tools/cloud-sql
+      showNav: true
     - title: Voyager
       url: /tools/voyager
-      subsections:
-        - title: What is it
-          type: "hash"
-          url: "#what"
-        - title: Why use it
-          type: "hash"
-          url: "#why"
-        - title: How to install
-          type: "hash"
-          url: "#install"
-        - title: Further references
-          type: "hash"
-          url: "#references"
+      showNav: true
     - title: Google Data Studio
       url: /tools/google-data-studio
       disabled: true
   Case Study:
     - title: Overview
-      url: /case-study
+      url: /case-study/overview
     - title: Farmer Plot Trials
       url: /case-study/farmer-plot-trials
+      showNav: true
       subsections:
         - title: Creating a database
           type: "path"

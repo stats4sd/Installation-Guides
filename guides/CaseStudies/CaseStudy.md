@@ -1,8 +1,9 @@
 ---
 layout: default
 section: Case Study
-title: Case Study
-permalink: /case-study
+title: Overview
+subsection: Case Study
+permalink: /case-study/overview
 ---
 
 # Case Study
