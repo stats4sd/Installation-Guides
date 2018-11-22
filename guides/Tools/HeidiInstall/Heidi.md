@@ -7,7 +7,7 @@ permalink: /tools/heidi
 
 # Heidi
 
-A MySQL Client Test test
+A MySQL Client. 
 
 # Install
 
