@@ -12,6 +12,11 @@ In this step we will using [OpenRefine](/tools/open-refine) to clean our trial d
 
 If you do not have it installed you can follow the link to the tools page.
 
+## 0. Backup the original _raw_ data
+
+It is good practice to always retain a copy of original data in case you ever need to review or undo changes.
+As such for each of our tables we will make a copy called _raw_, which we **will not ever make changes to**
+
 ## 1. Open OpenRefine
 
 ## 2. Create a new project for our trial data
