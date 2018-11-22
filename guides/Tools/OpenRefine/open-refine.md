@@ -12,7 +12,7 @@ permalink: /tools/open-refine
 Open Refine is a powerful tool to help with data cleaning.
 
 You can import data from csv, json or even connect to a database and perform various analysis functions to help identify and transform messy data.
-It is completely free, and works offline line with large datasets
+It is completely free, and works offline with large datasets
 
 # Why use it? {#why}
 
