@@ -5,9 +5,12 @@
   href="{{ subsection.url }}"
 >
   {% else %}
+
   <a
   href="{{ sectionPage.url | relative_url }}{{ subsection.url }}"
-  class="{% if subsection.title==page.title %}active{% endif %}"
+  class="
+  {% if subsection.title==page.title %}active {% endif %}{% if subsection.disabled==true %} disabled{% endif %}
+  "
 >
   {% endif %}
     <li>{{ subsection.title }}</li>

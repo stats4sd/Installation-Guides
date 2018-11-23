@@ -2,7 +2,7 @@ sections:
   - title: Home
     startUrl: /
   - title: Concepts
-    startUrl: /concepts/introduction
+    startUrl: /concepts
   - title: Tools
     startUrl: /tools/introduction
   - title: Case Study
@@ -76,6 +76,8 @@ sectionPages:
         - title: Extracting data for analysis
           type: "path"
           url: "/step-4"
+          disabled: true
         - title: Generating outputs
           type: "path"
           url: "/step-5"
+          disabled: true
