@@ -44,7 +44,7 @@ You will see a preview of your data. By default it will try to incorrectly merge
 
 When the correct data is set and project named you can click **Create Project** to proceed
 
-## 3. Check each column for inconsistency
+## 2. Check each column for inconsistency
 
 One of the powers of openRefine comes from quickly identifying inconsistencies within a column of data. To do this we select the column and tell the software what type of data, or _facet_, we are expecting. For example this might be _Text_ or _Numberic_. We can then do analysis on the data.
 
@@ -130,12 +130,38 @@ If for any reason you make a mistake you can undo transformations from the _Undo
 
 ![image](/assets/images/FarmerTrials/open-refine-16.png){:class="size--medium-small"}
 
-## 4. Export your data to csv
+## 3. Export your data to csv
 
 Now that our data is clean we want to import it back into our database. The easiest way to do this is to export it as a csv, which we will then import into our database.
 
-## 5. Import your data back into the database
+![image](/assets/images/FarmerTrials/open-refine-17.png)
 
-...
+This will prompt an automatic download to your default 'downloads' folder
+
+## 4. Import your data back into the database
+
+Finally we can import the data back into our data.
+
+First we will remove any existing data (This again is why it is good to have a backup).
+
+Right-click on the table and select **Empty table(s)**
+
+![image](/assets/images/FarmerTrials/open-refine-18.png){:class="size--medium-large"}
+
+Now we can import the new data by clicking on _Tools_ and _Import csv file_
+
+![image](/assets/images/FarmerTrials/open-refine-19.png)
+
+You might receive an error message. If it says the data was imported then this is most likely fine and you can simply close it
+
+![image](/assets/images/FarmerTrials/open-refine-20.png)
+
+Finally you can click on the _refresh_ button to see your imported data. This time there should only be 175 rows.
+
+![image](/assets/images/FarmerTrials/open-refine-21.png)
+
+## 5. Repeat the process for all other datasets
 
 You should repeat this process for both _plot_data_ and _preference_data_ datasets, and try to remove as many inconsistencies as possible.
+
+In the [next step](/case-study/farmer-plot-trials/step-4) we will be using queries to merge data from all of these datasets together for use in our analysis.
