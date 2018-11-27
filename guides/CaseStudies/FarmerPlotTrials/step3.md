@@ -116,6 +116,7 @@ When you arrive at the farmername _'other'_ we will mark both of these rows to d
 
 ![image](/assets/images/FarmerTrials/open-refine-13.png)
 
+When you have finished marking all of the rows with duplicate farmers you should have a total of 9 records flagged.
 Finally we can delete the marked rows by creating a new facet on our flag column,
 
 ![image](/assets/images/FarmerTrials/open-refine-14.png)
@@ -124,7 +125,7 @@ then select the records that match as 'true' for our flag, and finally use the _
 
 ![image](/assets/images/FarmerTrials/open-refine-15.png)
 
-This should reduce our total from 182 rows to 175.
+This should reduce our total from 182 rows to 173.
 
 If for any reason you make a mistake you can undo transformations from the _Undo / Redo_ menu
 
@@ -156,7 +157,7 @@ You might receive an error message. If it says the data was imported then this i
 
 ![image](/assets/images/FarmerTrials/open-refine-20.png)
 
-Finally you can click on the _refresh_ button to see your imported data. This time there should only be 175 rows.
+Finally you can click on the _refresh_ button to see your imported data. This time there should only be 173 rows.
 
 ![image](/assets/images/FarmerTrials/open-refine-21.png)
 
