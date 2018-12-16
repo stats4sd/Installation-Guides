@@ -2,7 +2,7 @@ sections:
   - title: Home
     startUrl: /
   - title: Concepts
-    startUrl: /concepts
+    startUrl: /concepts/introduction
   - title: Tools
     startUrl: /tools/introduction
   - title: Case Study
@@ -13,25 +13,25 @@ sections:
 sectionPages:
   Home: []
   Concepts:
-    - title: Data Flow Concepts
-      url: /concepts/
+    - title: Introduction
+      url: /concepts/introduction
     - title: Why Databases?
       url: /concepts/whatandwhydb
     - title: Database Setup
-      url: /concepts/introduction
+      url: /concepts/database-setup
       disabled: true
     - title: Working With Data Structures
       url: /concepts/data-structures
     - title: Database Relationships
       url: /concepts/relationships
     - title: Organising Efficient Data Flow
-      url: /concepts/introduction
+      url: /concepts/efficient-data-flow
       disabled: true
     - title: Making Data Available
-      url: /concepts/introduction
+      url: /concepts/data-availability
       disabled: true
     - title: Building Outputs
-      url: /concepts/introduction
+      url: /concepts/building-outputs
       disabled: true
   Tools:
     - title: Introduction
