@@ -16,18 +16,6 @@ navigate to: http://localhost:4000/Installation-Guides/
 Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guides/GoogleCloud)
 To link a page within the existing navigation system it should be added to \_data/pagelist.yaml.
 
-### Handling URLs
-
-Deploying to github organisation repo adds complication that docs appear on /repo-name/ url, messing up links. Can resolve using
-`relative_url` filter, e.g.
-
-```
-<link href="{{ "/assets/css/style.css" | relative_url }}" rel="stylesheet">
-
-```
-
-https://jekyllrb.com/docs/github-pages/#project-page-url-structure
-
 ### Troubleshooting
 
 Q. Why does my scss have errors (deprecated)?

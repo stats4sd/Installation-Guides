@@ -51,3 +51,9 @@ a.disabled {
 .page.Introduction > h2 {
   clear: both;
 }
+
+blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}

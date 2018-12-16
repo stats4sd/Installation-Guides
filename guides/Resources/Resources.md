@@ -7,7 +7,7 @@ permalink: /resources
 
 # Resources
 
-Coming soon...
+> Coming soon
 
 On this plan we intend to put download links to various resources that we think may be of use such as checklists, cheat sheets and code snippets.
 
