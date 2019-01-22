@@ -1,6 +1,6 @@
 ---
 layout: default
-section: Guides
+section: Concepts
 title: Database Setup
 permalink: /concepts/database-setup
 ---
