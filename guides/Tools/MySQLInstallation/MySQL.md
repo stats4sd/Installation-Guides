@@ -19,16 +19,6 @@ It can be installed on your local machine or a remote server / cloud server. If 
 - It's free and open source.
 - It's considered easier to learn than other SQL systems like PostgreSQL or MS SQL.
 
-# Terminology
-
-**MySQL Server**: The actual installation of MySQL. This runs in the background, either on your local computer or on a remote server. You can interact with the server through the command line (a shell terminal), or through an SQL Client.
-
-SQL **Client:** A piece of software that lets you connect to a MySQL server. Clients generally let you configure multiple connections, so you can connect to your local server, or a remote server, through the same client. Examples of SQL clients are Heidi, MySQL Workbench and DBForge.
-
-**Database:** A MySQL database is a set of tables, views, functions and other objects. A MySQL Server typically hosts multiple databases. Users can be given different permissions on different databases, so you can control who can access which databases. This allows you to keep databases for different projects or purposes on the same SQL Server.
-
-**User Account:** To access a server and the databases it hosts, you need a user account, which consists of a username and password. To read, alter, delete or update anything in a database, a user needs to be given permissions to do so. Permissions can be given at the database level, or globally.
-
 # How to Install {#install}
 
 ## Windows
