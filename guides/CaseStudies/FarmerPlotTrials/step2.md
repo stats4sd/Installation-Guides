@@ -67,6 +67,9 @@ In the window that appears you should be able to keep most of the default settin
 
 ![image](/assets/images/FarmerTrials/export-data-2.png)
 
+> **IMPORTANT:** Excel will likely make some mistakes when defininng your data formats.
+> Here are <a href="/resources/mysql-for-excel-tips" target="_blank">some quick tips to ensure your data maintains the correct format</a>
+
 If successful you will see the following message
 ![image](/assets/images/FarmerTrials/export-data-3.png)
 
@@ -95,6 +98,7 @@ Go back to heidi and click on your database. You should see a list of the tables
 ![image](/assets/images/FarmerTrials/export-data-8.png)
 
 ## Review and Next Step
-At this stage, we have all of our data from Excel imported into our database. The data are in 3 tables, which correspond to the 3 worksheets in our Excel file. 
+
+At this stage, we have all of our data from Excel imported into our database. The data are in 3 tables, which correspond to the 3 worksheets in our Excel file.
 
 In the [next step](/case-study/farmer-plot-trials/step-3), we will do some data cleaning and create a set of 'processed' data tables that we can use for querying.
