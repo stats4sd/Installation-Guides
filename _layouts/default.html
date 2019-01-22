@@ -8,15 +8,15 @@
     />
     <link rel="stylesheet" type="text/css" href="
     {{
-      "/assets/css/typography.css" | relative_url
+      "/assets/css/typography.css"
     }}
     " /> <link rel="stylesheet" type="text/css" href="
     {{
-      "/assets/css/layout.css" | relative_url
+      "/assets/css/layout.css"
     }}
     " /> <link rel="stylesheet" type="text/css" href="
     {{
-      "/assets/css/images.css" | relative_url
+      "/assets/css/images.css"
     }}
     " />
     <!-- analytics tracking -->
@@ -35,7 +35,7 @@
       <div class="nav--top full-site-width">
         {% for section in site.data.pagesMeta.sections %}
         <a
-          href="{{ section.startUrl | relative_url }}"
+          href="{{ section.startUrl }}"
           alt="{{ section.title }}"
           class="{% if section.title==page.section %}active{% endif %}"
           >{{ section.title }}</a
@@ -59,10 +59,7 @@
         </a>
         {% else %}
         <!-- render nav links -->
-        <a
-          href="{{ sectionPage.url | relative_url }}"
-          alt="{{ sectionPage.title }}"
-        >
+        <a href="{{ sectionPage.url }}" alt="{{ sectionPage.title }}">
           <span class="{% if sectionIsActive %}active{% endif %}">
             {{ sectionPage.title }}
           </span>
@@ -94,7 +91,7 @@
     </div>
     <footer>
       <div style="margin-left:1em">Statistics for Sustainable Development</div>
-      <div style="margin-right:1em">v1.0.0</div>
+      <div style="margin-right:1em">v1.0.1</div>
     </footer>
   </body>
 </html>

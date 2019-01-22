@@ -15,17 +15,17 @@ Many of the ideas can of course be generalised further, and the tools presented 
 
 ## Sections
 
-### <a href="{{ '/concepts' | relative_url }}">Concepts</a>
+### [Concepts](/concepts/introduction)
 
 ![image](/assets/images/concepts.svg){:class="section-image"}
 Why use databases? How can you organise data in robust structures to allow efficient data flow, and make available in secure, ethical ways for use in generating outputs? In this section we aim to address some of these questions and many of the core concepts around data flow.
 
-### <a href="{{ '/tools' | relative_url }}">Tools</a>
+### [Tools](/tools/introduction)
 
 ![image](/assets/images/tools.svg){:class="section-image"}
 What tools can we use to help managing data, and how exactly to we get started using them? In this section We examine take a practical examination of 8 different software platforms that can be used to support data flow. All of the tools used are completely free for the use cases identified.
 
-### <a href="{{ '/case-study/farmer-plot-trials' | relative_url }}">Case Study</a>
+### [Case Study](/case-study/overview)
 
 ![image](/assets/images/case-study.svg){:class="section-image"}
 How might all of this be used in a practical context? In this section we take a case study of workign with data collected from farmer plot trials to effectively clean, store, process and use to generate outputs to help feed back information to the farmers and other key stakeholders.

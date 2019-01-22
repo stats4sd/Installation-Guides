@@ -13,7 +13,7 @@ sections:
 sectionPages:
   Home: []
   Concepts:
-    - title: Database Concepts
+    - title: Introduction
       url: /concepts/introduction
     - title: Why Databases?
       url: /concepts/whatandwhydb
@@ -26,13 +26,13 @@ sectionPages:
     - title: Good Practice - Creating Tables
       url: /concepts/building-tables
     - title: Organising Efficient Data Flow
-      url: /concepts/introduction
+      url: /concepts/efficient-data-flow
       disabled: true
     - title: Making Data Available
-      url: /concepts/introduction
+      url: /concepts/data-availability
       disabled: true
     - title: Building Outputs
-      url: /concepts/introduction
+      url: /concepts/building-outputs
       disabled: true
   Tools:
     - title: Introduction
@@ -77,6 +77,8 @@ sectionPages:
         - title: Extracting data for analysis
           type: "path"
           url: "/step-4"
+          disabled: true
         - title: Generating outputs
           type: "path"
           url: "/step-5"
+          disabled: true

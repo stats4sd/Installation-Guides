@@ -1,11 +1,11 @@
 ---
 layout: default
 section: Concepts
-title: Databases Concepts
-permalink: /concepts
+title: Introduction
+permalink: /concepts/introduction
 ---
 
-# Databases Concepts
+# Introduction
 
 Throughout the data flow cycle there are many core concepts that help to ensure our data is treated in a efficient, robust and ethical manner.
 

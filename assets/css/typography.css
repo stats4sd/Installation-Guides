@@ -23,11 +23,9 @@ a.active {
   font-weight: bold;
 }
 
-.main-content__sidebar > a.disabled {
+a.disabled {
   pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: #bdbdbd;
+  color: #bdbdbd !important;
 }
 
 .sidebar__link--coming-soon {
@@ -52,4 +50,10 @@ a.active {
 .page.Introduction > h3,
 .page.Introduction > h2 {
   clear: both;
+}
+
+blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
 }
