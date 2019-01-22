@@ -11,9 +11,10 @@ permalink: /concepts/relationships
 
 Having a set of data tables is great, but the real power of SQL comes when you start linking these tables together.
 
-Before you can link two tables in SQL, you must have a good understanding of what the data in those tables actually represents. See the best practice guide on [building your tables](/resources/building-tables){:target="_blank"} for help with this.
+Before you can link two tables in SQL, you must have a good understanding of what the data in those tables actually represents. See the best practice guide on [building your tables](/resources/building-tables){:target="\_blank"} for help with this.
 
 ## Types of relationship
+
 You may have heard of different types of relationship. These are common across all types of relational database, including Microsoft Access, MySQL, PostgreSQL and Oracle DB.
 
 ### One to One
@@ -39,17 +40,18 @@ In the database, this is represented in a similar way to one-to-one relationship
 
 A record in Table 1 is linked to any number of records in Table 2, **and** a record in Table 2 is linked to any number of records in Table 1.
 
-This relationship is impossible to represent with just the 2 tables required, but is still quite a common occurance in real life. For example, you might work with NGOs, who all work in multiple regions within a country. Each NGO works in 1 or more regions, and each region has 1 or more NGOs active within it. This means you have a many-to-many relationship between your `ngos` table and your `counties` table. 
+This relationship is impossible to represent with just the 2 tables required, but is still quite a common occurance in real life. For example, you might work with NGOs, who all work in multiple regions within a country. Each NGO works in 1 or more regions, and each region has 1 or more NGOs active within it. This means you have a many-to-many relationship between your `ngos` table and your `counties` table.
 
-So, how do we model this relationship? We cannot just add a `county_id`  as a foreign key to the `ngos` table, as there could be any number of regions linked to one NGO. We also cannot just add an `ngo_id` as a foriegn key to the `counties` table, because there can be any number of NGOs linked to one region. 
+So, how do we model this relationship? We cannot just add a `county_id` as a foreign key to the `ngos` table, as there could be any number of regions linked to one NGO. We also cannot just add an `ngo_id` as a foriegn key to the `counties` table, because there can be any number of NGOs linked to one region.
 
-Instead, we create a link table - a table that sits in between the 2 main tables, which acts as the "secondary" table for both. This link table has the 2 columns `ngo_id` and `county_id`. Each record represents 1 line that can be drawn between the 2 main tables.
+Instead, we create a link table - a table that sits in-between the 2 main tables, which acts as the "secondary" table for both. This link table has the 2 columns `ngo_id` and `county_id`. Each record represents 1 line that can be drawn between the 2 main tables.
 
 ![image](/assets/images/relationships/many-many.png)
 
 This link table is often called a 'pivot' table by database managers, but "link table" is also understood.
 
 ### Link table features
+
 Just like any other table, this table requires a primary key - a way of uniquely identifying each row. Remember that this can be a combination of fields, and it's good practice to use the combination of both fields in your link table. In our example above, this means your primary key is both `ngo_id` and `county_id`. This means that, for example, you will ensure you never have 2 records linking the same ngo and county together, as that would be redundant and might result in strange results when you query your database.
 
-One other thing to consider is naming of your link tables. Many people suggest using the convention of concatenating the 2 tables you are linking, in alphabetical order - e.g.: counties_ngos. This can work well, but I personally prefer to make it even more clear which tables are "link" tables. So, I start each link table name with `_link`. That way, when my tables are sorted alphabetically, all the link tables appear together at the top of the list.
+One other thing to consider is naming of your link tables. Many people suggest using the convention of concatenating the 2 tables you are linking, in alphabetical order - e.g.: counties_ngos. This can work well, but also it can sometimes be preferable to make it even more clear which tables are "link" tables. One way to achieve this is by naming each table with `_link`. That way, when the tables are sorted alphabetically, all the link tables appear together at the top of the list.
