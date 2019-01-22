@@ -18,7 +18,7 @@ These terms are very useful to know, and will help your overall understanding of
 
 It is very useful to understand the difference between these 3 concepts. When you "install MySQL" onto your computer, you're installing the MySQL **server**. You then use a **client** to access that server, and create one ore more **databases** for your projects.
 
-![image](/assets/images/MySQL/Screenshot2018-10-2212-b6509f08-cad9-4e2b-a443-95bce75ee2b5.13.27.png)
+![image](/assets/images/DatabaseSetup/ServersDatabasesClients.png)
 
 **User Account:** To access a server and the databases it hosts, you need a user account, which consists of a username and password. To read, alter, delete or update anything in a database, a user needs to be given permissions to do so. Permissions can be given at the database level, or globally.
 

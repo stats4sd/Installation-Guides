@@ -18,12 +18,13 @@ sectionPages:
     - title: Why Databases?
       url: /concepts/whatandwhydb
     - title: Database Setup
-      url: /concepts/introduction
-      disabled: true
+      url: /concepts/database-setup
     - title: Working With Data Structures
       url: /concepts/data-structures
     - title: Database Relationships
       url: /concepts/relationships
+    - title: Good Practice - Creating Tables
+      url: /concepts/building-tables
     - title: Organising Efficient Data Flow
       url: /concepts/introduction
       disabled: true

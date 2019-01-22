@@ -13,7 +13,7 @@ Having a set of data tables is great, but the real power of SQL comes when you s
 Before you can link two tables in SQL, you must have a good understanding of what the data in those tables actually represents. See the best practice guide on table structures for help with this.
 
 ## Types of relationship
-You may have heard of different types of relationship. These are common across all types of relational database, including Microsoft Access, MySQL, PostgreSQL and Oracle DB. 
+You may have heard of different types of relationship. These are common across all types of relational database, including Microsoft Access, MySQL, PostgreSQL and Oracle DB.
 
 ### One to One
 The simplest type of relationship: A record in Table 1 is linked to at most 1 record in Table 2. For example, in your farmer research network, you might have a number of farmers, represented in a table of farmers. Some farmers have an account on your website, but each farmer can only have 1 account. So, Your `farmers` table has a one-to-one relationship with your `web_accounts` table.
