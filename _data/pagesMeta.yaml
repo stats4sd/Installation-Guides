@@ -76,7 +76,6 @@ sectionPages:
         - title: Extracting data for analysis
           type: "path"
           url: "/step-4"
-          disabled: true
         - title: Generating outputs
           type: "path"
           url: "/step-5"

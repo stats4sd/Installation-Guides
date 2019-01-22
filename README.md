@@ -11,6 +11,8 @@ The guides are written by the Research Methods Support team for the Collaborativ
 `bundle exec jekyll serve`
 navigate to: http://localhost:4000/Installation-Guides/
 
+if using livereload and `--livereload` flag to the above command
+
 ### Adding Pages
 
 Pages can essentially sit in any folder structure, as their url is defined in the top 'front-matter' (see example on guides/GoogleCloud)
