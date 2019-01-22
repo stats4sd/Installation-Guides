@@ -28,6 +28,8 @@ Anywhere excel detects text it will format as VarChar, and use the cell with lon
 
 This will be fine if our IDs stay consistent, although if they could change we might want to add a few more characters. Columns like names will definitely need to have reasonable maximum length.
 
+For more information on best practice for VarChar lengths see <a href="/concepts/data-structures" target="_blank">Working with Data Structures</a>
+
 ![image](/assets/images/Resources/mysql-for-excel-3.png){:class="size--medium-small"}
 
 Any column where we will be entering text, such as a comment or feedback form should probably be formatted as **Text** Data Type instead of VarChar
