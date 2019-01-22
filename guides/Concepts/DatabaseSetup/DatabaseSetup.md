@@ -23,7 +23,7 @@ It is very useful to understand the difference between these 3 concepts. When yo
 **User Account:** To access a server and the databases it hosts, you need a user account, which consists of a username and password. To read, alter, delete or update anything in a database, a user needs to be given permissions to do so. Permissions can be given at the database level, or globally.
 
 
-## Good Practice
+## User Accounts
 
 ### The Root User Account
 When you first install a mySQL server, a root user will be created. This root user has full access to every database on the server, so it should be protected with a secure password. Anyone with 'root' access can see, edit and delete anything on your server, so make sure only your data manager(s) have access to this account. 
