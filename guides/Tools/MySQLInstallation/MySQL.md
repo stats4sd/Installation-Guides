@@ -7,13 +7,13 @@ permalink: /tools/mysql
 
 # MySQL
 
-# What is it?
+# What is it? {#what}
 
 MySQL is a database server and a language that allows you to interact with databases.
 
 It can be installed on your local machine or a remote server / cloud server. If you are going to do any work with MySQL, we recommend installing it locally so you can work and test your code in a safe, offline environment. Even if your main databases will only exist on a remote server, we recommend having a local SQL database setup so you can practice and test your code while offline.
 
-# Why use it?
+# Why use it? {#why}
 
 - It's is a very popular version of SQL (Structured Query Language), so there are a lots of tools and systems that can interact with a MySQL database.
 - It's free and open source.
@@ -29,7 +29,7 @@ SQL **Client:** A piece of software that lets you connect to a MySQL server. Cli
 
 **User Account:** To access a server and the databases it hosts, you need a user account, which consists of a username and password. To read, alter, delete or update anything in a database, a user needs to be given permissions to do so. Permissions can be given at the database level, or globally.
 
-# How to Install
+# How to Install {#install}
 
 ## Windows
 
