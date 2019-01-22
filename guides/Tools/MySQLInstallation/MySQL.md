@@ -118,4 +118,17 @@ Screenshot of download page. I missed this button for years and had to log in ev
 
 You may also be asked to configure other products, such as the documentation and example databases if you chose to install them. Follow the instructions to configure the remaining products, then finish the installer.
 
-The MySQL Installer will remain available as an application. You can run the installer again at anytime to add, remove or reconfigure MySQL products.
+### Installing Additional Components
+You may find that, after the initial installation, you need to install additional components, for example the MySQL to Excel plugin, or the plugin for Visual Studio. You can do this by running the MySQL Installer again. 
+
+![image](/assets/images/MySQL/mysql-installer-add.png)
+
+When you run the installer again, you'll see a list of the components you already have installed, and different options to the right:
+ - Add: Click to install new components
+ - Modify: Click to reconfigure exiting components. This will take you through any post-installation setup steps for your chosen components.
+ - Upgrade: This will check for updates to your installed components, and guide you through installing them if there are any available.
+ - Remove: This lets you uninstall one or more components.
+
+To add a new component, click the Add button. You will be presented with a list of available components. You may need to drill down through many levels to find the product you need. For example, The MySQL for Excel plugin is under Applications -> MySQL For Excel -> MySql For Excel 1.3 -> MySQL For Excel 1.3.7 - X86. (This might change in future versions!)
+
+![image](/assets/images/MySQL/mysql-installer-choose-components.png)

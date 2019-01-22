@@ -7,9 +7,16 @@ permalink: /tools/heidi
 
 # Heidi
 
-A MySQL Client Test test
+# What is it? {#what}
 
-# Install
+An SQL client for Windows. 
+
+# Why use it? {#why}
+
+- It's free and open source.
+- It's a good client to start with, as the UI is considered simpler than other popular clients (e.g. MySQL Workbench).
+
+# How to Install {#install}
 
 Heidi is a Windows-only application.
 
