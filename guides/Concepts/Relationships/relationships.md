@@ -26,7 +26,7 @@ To create this in the database, you link 1 field in your secondary table to the 
 **Which is your secondary table?**
 If one of your tables depends on another it can be called the secondary. In our example, it doesn't make sense to have a record in `web_accounts` if there isn't a corresponding record in `farmers`. (As a farmer must exist to have a user account on your site!). So, your `web_accounts` table is the secondary table in this example.
 
-![image](/assets/images/relationships/1-1.jpg)
+![image](/assets/images/relationships/1-1.png)
 
 ### Many to One
 
@@ -34,19 +34,24 @@ A record in Table 1 is linked to any number of records in Table 2. For example, 
 
 In the database, this is represented in a similar way to one-to-one relationships - by adding a "foreign key" field to your secondary table. In this case, the 'secondary' table is always the 'many' table. So, in the example here, the tables are linked via the `farmer_id` field in the `plots` table. That field tells you which farmer each plot belongs to. One farmer can have many plots, (e.g. Farmer 3 has 2 plots), but a single plot can only belong to one farmer.
 
-![image](/assets/images/relationships/many-1.jpg)
+![image](/assets/images/relationships/many-1.png)
 
 ### Many to Many:
 
 A record in Table 1 is linked to any number of records in Table 2, **and** a record in Table 2 is linked to any number of records in Table 1.
 
-This relationship is impossible to represent with just the 2 tables required, but is still quite a common occurance in real life. For example, you might work with NGOs, who all work in multiple regions within a country. Each NGO works in 1 or more regions, and each region has 1 or more NGOs active within it. This means you have a many-to-many relationship between your `ngos` table and your `counties` table.
+This relationship is impossible to represent with just the 2 tables required, but is still quite a common occurance in real life. For example, you might work with NGOs, who all work in multiple regions within a country. Each NGO works in 1 or more regions, and each region has 1 or more NGOs active within it. This means you have a many-to-many relationship between your `ngos` table and your `counties` table. So, how do we model this relationship?
 
-So, how do we model this relationship? We cannot just add a `county_id` as a foreign key to the `ngos` table, as there could be any number of regions linked to one NGO. We also cannot just add an `ngo_id` as a foriegn key to the `counties` table, because there can be any number of NGOs linked to one region.
+![image](/assets/images/relationships/many-many-no-link.png)
+
+
+We cannot just add a `county_id` as a foreign key to the `ngos` table, as there could be any number of regions linked to one NGO. We also cannot just add an `ngo_id` as a foriegn key to the `counties` table, because there can be any number of NGOs linked to one region.
 
 Instead, we create a link table - a table that sits in-between the 2 main tables, which acts as the "secondary" table for both. This link table has the 2 columns `ngo_id` and `county_id`. Each record represents 1 line that can be drawn between the 2 main tables.
 
 ![image](/assets/images/relationships/many-many.png)
+
+So, evey "many to many" relationship is actually modelled as 2 different many to one relationships. (In the graphic, read each relationship starting from the middle).
 
 This link table is often called a 'pivot' table by database managers, but "link table" is also understood.
 
