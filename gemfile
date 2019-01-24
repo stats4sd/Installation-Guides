@@ -13,3 +13,6 @@ end
 
 # Allow github metadata to be pulled in for use with github pages
 gem "jekyll-github-metadata"
+
+# Support for livereload on windows
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
