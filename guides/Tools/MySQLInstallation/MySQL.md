@@ -64,7 +64,7 @@ Screenshot of download page. I missed this button for years and had to log in ev
 
 - At Group Replication, choose "Standalone MySQL Server / Classic MySQL Replication".
 
-![image](/assets/images/MySQL/Screenshot2018-10-2212-42bbc595-7b80-46a2-b33c-c4ff33e4ecfb.28.05.png)
+![image](/assets/images/MySQL/Screenshot2018-10-2212-[4]2bbc595-7b80-46a2-b33c-c4ff33e4ecfb.28.05.png)
 
 ---
 
