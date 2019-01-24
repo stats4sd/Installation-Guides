@@ -67,14 +67,6 @@ A lookup table is usually very simple. At a minimum it has:
 - `id`: The primary key. This typically corresponds to the 'value' of the choice in a data collection form.
 - `label`: This is typically what you would want to show in a report, or to the enumerators in a data collection form.
 
-**Why not just use a single column?**:
-
-- Once you set the value of a primary key field, that value should never change - otherwise you will break any links with related tables!
-- There are circumstances when you would want to change the label associated with a lookup item. For example, fixing a spelling error.
-- Your `id` and `label` will likely be used for different purposes and so should have different properties.
-  - Your `label` might include spaces, capitalisation etc, to make it good for labels in reports or dashboards.
-  - Your `id` might be a shorter string without spaces, or maybe an integer - something that is not as easy to read, but that is much more useful for programming.
-
 Most lookup tables just need these columns. If you are working in multiple languages, you might have 1 label column per language. For example: `label_english`, `label_swahili`, `label_spanish`.
 
 ### Lookup table, or not?
