@@ -101,4 +101,4 @@ Go back to heidi and click on your database. You should see a list of the tables
 
 At this stage, we have all of our data from Excel imported into our database. The data are in 3 tables, which correspond to the 3 worksheets in our Excel file.
 
-In the [next step](/case-study/farmer-plot-trials/step-3), we will do some data cleaning and create a set of 'processed' data tables that we can use for querying.
+In the [next step](/case-study/farmer-plot-trials/step-3), we will link the data together using relationships.
