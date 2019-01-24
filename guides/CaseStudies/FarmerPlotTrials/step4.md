@@ -104,28 +104,37 @@ Click to _sort by count_
 
 We can immediately see that many of our farmers have 2 records.
 
-In this situation there is no standard way to resolve such issues, you may look through each record to see if they are duplicates, try to identify which record is correct by some other means, or possibly omitting all duplicate data from your analysis.
+> In a situation where we have inconsistent records there is no standard way to resolve. You might be able to go back to the enumerator to try and determine what went wrong, or decide on a method for handling such as omitting all duplicate data or just keeping original/newer values.
 
-For this example we know that a duplicate record indicates the enumerator making a correction, and as such we should only keep the newest records.
+For the sake of this example, let us assume that all of the newer records are correct. That gives us 2 options:
 
-We can **click on each farmer name** in our list, and use the star tool to **mark the rows we intend to delete** using the _flag_ icon.
+1. delete the older records, to remain only with newer
+2. rename the farmers in older records, to keep both
 
+As the data in hh_info table is also linked with the data in the plot_data table, if we wanted to delete farmers we would have to make sure we do so in both places.
+
+To keep things simpler, and to prevent loss of any data, we will just rename the duplicate records.
+
+### Isolate the duplicate records
+
+We can go through the list and for each set of duplicates _flag_ the older record
 ![image](/assets/images/FarmerTrials/open-refine-12.png)
 
-When you arrive at the farmername _'other'_ we will mark both of these rows to delete as the data is not valid.
-
-![image](/assets/images/FarmerTrials/open-refine-13.png)
-
-When you have finished marking all of the rows with duplicate farmers you should have a total of 9 records flagged.
-Finally we can delete the marked rows by creating a new facet on our flag column,
+Once all duplicates have been flagged we can select them all using _Facet by flag_
 
 ![image](/assets/images/FarmerTrials/open-refine-14.png)
 
-then select the records that match as 'true' for our flag, and finally use the _edit rows_ and _Remove all matching rows_ to delete the records.
+There should now be 8 records selected which we want to rename
 
 ![image](/assets/images/FarmerTrials/open-refine-15.png)
 
-This should reduce our total from 182 rows to 173.
+We could do this manually, or altogether by using a custom transformation:
+
+![image](/assets/images/FarmerTrials/open-refine-15a.png){:class="size--medium"}
+
+![image](/assets/images/FarmerTrials/open-refine-15b.png){:class="size--large"}
+
+### Tip: Undo / Redo
 
 If for any reason you make a mistake you can undo transformations from the _Undo / Redo_ menu
 
