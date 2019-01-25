@@ -8,8 +8,6 @@ permalink: /case-study/farmer-plot-trials/step-5
 
 # Extracting data for analysis
 
-> **Under Construction**
-
 In this step we will using [DB Forge](/tools/db-forge) to query our data and extract all of the information we need for our analysis.
 We will also use the tool to build a database schema which will allow us to merge data from different datasets together
 
