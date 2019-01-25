@@ -61,7 +61,7 @@ The second visualisation colours the data by reported level of striga after trea
 
 Finally we want to also show separate graphs depending on the treatment. We can do this using _Facets_. Simply drag the _Strigatreatment_selected_ field to the _row Facet_, or locate the relevant visualisation from the right and click to specify
 
-![image](/assets/images/FarmerTrials/voyager-6.png)
+![image](/assets/images/FarmerTrials/voyager-7.png)
 
 ## 4. Customise the output
 
@@ -70,5 +70,11 @@ Our visualisation is nearly complete, however there are a few small adjustments 
 First, we can see a few results for the treatment \N. This indicates the data was empty. We could consider whether to keep this in our database or remove it from the csv we imported, however what will be easiest (and likely best) for now is to simply omit from the visualisation.
 
 You can use the _Filter_ button next to the _Strigatreatment_selected_ to exclude these values
+
+![image](/assets/images/FarmerTrials/voyager-8.png)
+
+Finally we want to make adjustment to the colour scale used as it is misleading. The data used categories 'red_light', 'yellow_light', 'green_light' to describe the prevalence of striga after the treatment. It would be ideal if we could colour the bars red/yellow/green accordingly, unfortunately the software does not give us the full ability to do this.
+
+Instead we will simply pick the closest-matching preset colour scheme...
 
 ## 5. Export generated charts
