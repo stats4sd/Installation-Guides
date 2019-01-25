@@ -6,30 +6,6 @@ author: Stats4SD
 
 Heidi is only one out of many possible clients. We recommend it as a good place to start if you have never used SQL before, but there are also other options that are more suited to particular tasks. This list is a few that the Stats4SD has some experience with that might be of interest.
 
-## DBForge
-(download here)[https://www.devart.com/dbforge/mysql/studio/download.html] - Express is the free version of the software. Other versions offer a trial version, which expires after 30 days.
-
-DBForge is made of a set of different tools for interacting with your databases. From the start screen, there are tabs that show you these tools. Two features make DBForge a very useful tool to explore - the Query Builder (under SQL Development tab) and the Database Diagram (under Database Design tab).
-
-###positive
-The main reason to use DBForge is for the visual representation of data structures and queries.
-
-- The Database Diagram tool lets you view your tables on a diagram, and create relationships by dragging lines between your tables. Many people will find this more intuitive than creating the relationships by manually adding foreign key constraints through Heidi.
-
-- The visual Query builder lets you pull in fields from different tables. It automatically suggests joins to use based on the relationships present between the tables.
-
-We have a seperate document that gives more details on the use of these tools within DBForge.
-
-###negative
-The free version of the tool is quite limited - it only allows a maximum of 10 database objects (e.g. tables) within a database diagram, and only 3 within the visual query builder. There are other restrictions compared with their paid versions, shown (on their website)[https://www.devart.com/dbforge/mysql/studio/editions.html]. The paid versions start at USD 150 per licence.
-
-The other core functions, like importing / exporting data, making table edits etc are also not as intuitive as other packages.
-
-DbForge only works for MySQL databases, but the company do offer applications specific to other SQL types. They currently offer apps for [Postgresql](https://www.devart.com/dbforge/postgresql/), [MS SQL Server](https://www.devart.com/dbforge/sql/) and [Oracle](https://www.devart.com/dbforge/oracle/).
-
-**Editor's Note**
-I think the main reason to use dbForge is for the database designer. Being able to map your tables visually is a huge help, and I do it for every database I design. Normally, I just sketch out the diagram on paper, or using a tool like (Draw.io)[https://www.draw.io/]. But sometimes it is nice to be able to create the diagram in the same place as your actual data, and then have the ability to create the links directly into your database, which is where dbForge is useful.
-
 ## MySQL Workbench
 This is the client that comes bundled with MySQL. If you've used the [MySQL Installer from Oracle](https://dev.mysql.com/downloads/installer/) you may have seen that there's an option to also install Workbench.
 
