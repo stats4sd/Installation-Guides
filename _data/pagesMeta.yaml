@@ -19,11 +19,12 @@ sectionPages:
       url: /concepts/whatandwhydb
     - title: Database Setup
       url: /concepts/database-setup
-      disabled: true
     - title: Working With Data Structures
       url: /concepts/data-structures
     - title: Database Relationships
       url: /concepts/relationships
+    - title: Good Practice - Creating Tables
+      url: /concepts/building-tables
     - title: Organising Efficient Data Flow
       url: /concepts/efficient-data-flow
       disabled: true
@@ -76,7 +77,6 @@ sectionPages:
         - title: Extracting data for analysis
           type: "path"
           url: "/step-4"
-          disabled: true
         - title: Generating outputs
           type: "path"
           url: "/step-5"

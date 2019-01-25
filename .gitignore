@@ -1,2 +1,5 @@
 _site/
 .vscode
+
+# Ignore shadow-files (from open binaries...)
+*~$*
