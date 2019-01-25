@@ -178,4 +178,4 @@ Finally you can click on the _refresh_ button to see your imported data. This ti
 
 You should repeat this process for both _plot_data_ and _preference_data_ datasets, and try to remove as many inconsistencies as possible.
 
-In the [next step](/case-study/farmer-plot-trials/step-4) we will be using queries to merge data from all of these datasets together for use in our analysis.
+In the [next step](/case-study/farmer-plot-trials/step-5) we will be using queries to merge data from all of these datasets together for use in our analysis.
