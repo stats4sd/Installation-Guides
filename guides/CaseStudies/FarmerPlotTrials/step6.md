@@ -75,6 +75,16 @@ You can use the _Filter_ button next to the _Strigatreatment_selected_ to exclud
 
 Finally we want to make adjustment to the colour scale used as it is misleading. The data used categories 'red_light', 'yellow_light', 'green_light' to describe the prevalence of striga after the treatment. It would be ideal if we could colour the bars red/yellow/green accordingly, unfortunately the software does not give us the full ability to do this.
 
-Instead we will simply pick the closest-matching preset colour scheme...
+Instead we will simply pick the closest-matching preset colour scheme. _Set2_ should be a reasonable fit.
+
+![image](/assets/images/FarmerTrials/voyager-9.png)
 
 ## 5. Export generated charts
+
+Now we have our final chart all that is left to do is export it. Unfortunately the software does not currently have the ability to export the visualisations to an image file (hopefully future versions will), so for now the easiest way is just take a screenshot and crop appropriately
+
+![image](/assets/images/FarmerTrials/voyager-10.png)
+
+From the chart we can see that the highest prevalence of striga was within the _FarmerOwnPractice_ treatment, _Kisumu_ had low rates of striga throughout all interventions and both _lablab_ and _manure_ had very few _red_light_ cases.
+
+We could of course quickly build more visualisations to explore the data in other ways.
