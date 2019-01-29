@@ -25,7 +25,7 @@ It can be installed on your local machine or a remote server / cloud server. If 
 
 1. Download the .msi installer from the downloads page:
 
-[MySQL :: Download MySQL Installer](https://dev.mysql.com/downloads/installer/)
+<a href='https://dev.mysql.com/downloads/installer/'>Download the MySQL Installer</a>
 
 - We recommend downloading the larger file (~310MB). This is a much larger download, but once downloaded will run offline. The smaller download requires an active internet connection during the installation process.
 - If downloading from the [dev.mysql.com](http://dev.mysql.com) site, you'll be asked to log in or sign up. This is not required! There's an option below the buttons to just continue the download.

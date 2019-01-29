@@ -20,20 +20,20 @@ An SQL client for Windows.
 
 Heidi is a Windows-only application.
 
-1. Installing Heidi is a simple process. Download the installer from here: [https://www.heidisql.com/download.php](https://www.heidisql.com/download.php)
+1. Installing Heidi is a simple process. Download the installer from here: <a href='https://www.heidisql.com/download.php'>https://www.heidisql.com/download.php</a>
 2. Follow the installation instructions. You can keep all the defaults in the main options.
 
 # Guide - Connect to Localhost
 
 When you first run Heidi, you are presented with a Session Manager window. This is where you configure connections to different SQL Servers. You need to configure at least one connection to start using Heidi. You can add others later to connect to different servers, or the same server as different users.
 
-## Part 1: Connect to [localhost](http://localhost) as root
+## Part 1: Connect to localhost as root
 
 We recommend not using the root user after the initial setup, but it is useful to use first to get your other user accounts setup.
 
 ## 1. Connect to Localhost
 
-To connect to your [localhost](http://localhost) MySQL Server, open Heidi, and use the following settings to configure your session:
+To connect to your localhost MySQL Server, open Heidi, and use the following settings to configure your session:
 
 ![image](/assets/images/Heidi/Screenshot2018-10-2215-827c490c-b75f-4d82-9578-838f60cf2acb.05.11.png)
 
@@ -60,7 +60,9 @@ These are config databases, and should never be manually edited.
 You can create any number of databases in your server. To create a new database, right-click on the connection name and choose create new → database.
 
 - Give the database a name.
-- Use the collation utf8mb4_unicode_ci. (This collation uses utf-8 to allow for accented and non-standard latin characters. utf8mb4 also extends it to allow storing of emoji characters - probably not useful in many situations, but it doesn't appear to do any harm compared to using utf8_unicode_ci)
+- Choose a sensible collation for the database. Many of the options presented will work fine but for consistency we recommend you choose either:
+ - `utf8_unicode_ci`: this is a standard character encoding used by most modern programmes. It allows all standard latin characters (e.g.: A-z,0-9, !"£$%^") as well as most accented characters (e.g.: é,ç,ö,π)
+ - `utf8mb4_unicode_ci` - this extends the list above to also include emoji characters (probably not required for your data but still nice to know! 😆)
 - You will see the database added to the list of available databases in the left panel.
 
 **NOTE**: When you perform any action in Heidi, it will show you the actual SQL command being run in the bottom panel. This can be useful, if you want to know how to do something via a script, you can do it in a menu and look at the SQL output.
@@ -99,3 +101,4 @@ This screen shows all the user accounts on the current server. If you created a 
 - Save and open this new connection. You will see your new database on the left. You will also see the information_schema database, which is visible to everyone, but read-only to anyone without root access.
 
 You now have a new, empty database, and a user account with full control over this database, but without any access to edit the main server configuration.
+
