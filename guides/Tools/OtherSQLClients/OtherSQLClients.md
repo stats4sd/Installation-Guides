@@ -7,7 +7,7 @@ author: Stats4SD
 Heidi is only one out of many possible clients. We recommend it as a good place to start if you have never used SQL before, but there are also other options that are more suited to particular tasks. This list is a few that the Stats4SD has some experience with that might be of interest.
 
 ## MySQL Workbench
-This is the client that comes bundled with MySQL. If you've used the [MySQL Installer from Oracle](https://dev.mysql.com/downloads/installer/) you may have seen that there's an option to also install Workbench.
+This is the client that comes bundled with MySQL. If you've used the [MySQL Installer from Oracle](https://dev.mysql.com/downloads/installer/){:target='_blank'} you may have seen that there's an option to also install Workbench.
 
 ###positive
 - It's well supported, as it is one of the more widely used clients.
@@ -41,14 +41,14 @@ PgAdmin is one of the most popular clients for PostgreSQL. It's powerful and run
 It is harder to find good, free clients for PostgreSQL compared with MySQL. For this reason, PgAdmin could be a good option if you need to use PostgreSQL and have a limited budget. Heidi does support PostgreSQL, but only in a limited way, and it is not recommended for that purpose. Table Plus does support PostgreSQL, but the Windows version is still in development.
 
 ## Table Plus
-(download Windows version)[https://tableplus.io/windows]
-(download Mac version)[https://tableplus.io/]
+[download Windows version](https://tableplus.io/windows){:target='_blank'}
+[download Mac version](https://tableplus.io/){:target='_blank'}
 
 This is a relatively new application - the Mac version was released in 2017 and the Windows version was released in Summer 2018.
 
 The full version costs $49 for a perpetual licence. There is a free-forever version, and the only restriction is that you can only have 2 sessions, with 2 tabs each, open at the same time.
 
-The company have a '[getting started guide](https://tableplus.io/blog/2018/04/getting-started-with-tableplus.html)' that provides instructions on performing some common tasks, such as creating a connection to a database, viewsing and editing data, running queries, and importing and exporting data from CSV files.
+The company have a '[getting started guide](https://tableplus.io/blog/2018/04/getting-started-with-tableplus.html){:target='_blank'}' that provides instructions on performing some common tasks, such as creating a connection to a database, viewsing and editing data, running queries, and importing and exporting data from CSV files.
 
 ###positive
 - It works with MySQL and PostgreSQL.

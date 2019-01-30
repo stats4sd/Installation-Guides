@@ -31,6 +31,11 @@ It also includes a more full-featured CSV file importer compared to Heidi's file
 
 For examples of how to use DbForge's relationship builder and query builder, click the links below to view the relevant sections of the example case study:
 
-### [Example 1 - Using the relationships builder to link tables](/case-study/farmer-plot-trials/step-3)
+### [Example 1 - Using the relationships builder to link tables](/case-study/farmer-plot-trials/step-3){:target='_blank'}
 
-### [Example 2 - Using the query builder to extract data](/case-study/farmer-plot-trials/step-5)
+### [Example 2 - Using the query builder to extract data](/case-study/farmer-plot-trials/step-5){:target='_blank'}
+
+# Further References {#references}
+
+- [Devart homepage](https://www.devart.com/){:target='_blank'}
+- [DbForge Studio for MySQL - Features](https://www.devart.com/dbforge/mysql/studio/features.html){:target='_blank'}

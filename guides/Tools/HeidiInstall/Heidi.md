@@ -20,7 +20,7 @@ An SQL client for Windows.
 
 Heidi is a Windows-only application.
 
-1. Installing Heidi is a simple process. Download the installer from here: <a href='https://www.heidisql.com/download.php'>https://www.heidisql.com/download.php</a>
+1. Installing Heidi is a simple process. Download the installer from here: [https://www.heidisql.com/download.php](https://www.heidisql.com/download.php){:target='_blank'}
 2. Follow the installation instructions. You can keep all the defaults in the main options.
 
 # Guide - Connect to Localhost
@@ -102,3 +102,7 @@ This screen shows all the user accounts on the current server. If you created a 
 
 You now have a new, empty database, and a user account with full control over this database, but without any access to edit the main server configuration.
 
+# Further References {#references}
+
+- [Heidi home page and news feed](https://www.heidisql.com/){:target='_blank'}
+- [Community help forums](https://www.heidisql.com/forum.php){:target='_blank'}
