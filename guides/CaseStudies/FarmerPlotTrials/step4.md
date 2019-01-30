@@ -104,35 +104,44 @@ Click to _sort by count_
 
 We can immediately see that many of our farmers have 2 records.
 
-> In a situation where we have inconsistent records there is no standard way to resolve. You might be able to go back to the enumerator to try and determine what went wrong, or decide on a method for handling such as omitting all duplicate data or just keeping original/newer values.
+> Dealing with duplicates is perhaps one of the hardest jobs of a data manager. There is often no easy way to determine which records (if any!) should be kept, and eventually you may need to simply delete all the records with duplicate IDs from your data.
 
-For the sake of this example, let us assume that all of the newer records are correct. That gives us 2 options:
+In this example, we know that the duplicate records are due to enumerators visiting those farms twice at different times to collect preference data. This wasn't in the design, but it's what happened, so we have to handle it in the data.
 
-1. delete the older records, to remain only with newer
-2. rename the farmers in older records, to keep both
+If we keep all these duplicates in the data, then these duplicated farmers will have an unbalanced impact on the results of the study. We therefore need to do something to remove the duplicates. This gives us 2 options: 
 
-As the data in hh_info table is also linked with the data in the plot_data table, if we wanted to delete farmers we would have to make sure we do so in both places.
+1. Find out which records are "correct" and delete the others. This will require detailed explanation in your report to explain why you considered the "correct" records to be valid.
+2. If you cannot distinguish which are the "correct" records, you should remove all the duplicates from the database.
 
-To keep things simpler, and to prevent loss of any data, we will just rename the duplicate records.
+Here, we will choose to remove all the duplicates, as it is the safer option and we do not have enough information to identify the "correct" records.
 
-### Isolate the duplicate records
+> Remember: an incomplete dataset is better than a dataset with incorrect data.
 
-We can go through the list and for each set of duplicates _flag_ the older record
-![image](/assets/images/FarmerTrials/open-refine-12.png)
+As the data in *hh_info* table is also linked with the data in the *plot_data* table, we will need to keep a log of the records we delete, so we can delete the corresponding records in the *plot_data* table before re-importing everything into the database.
 
-Once all duplicates have been flagged we can select them all using _Facet by flag_
+### Check the duplicate records
 
-![image](/assets/images/FarmerTrials/open-refine-14.png)
+ We do not want to include the 'other' farmername records in our list of duplicates. By looking at the data, it is clear that these are 2 different farmers. They were given the farmername 'other' because they did not have a pre-assigned farmername.
 
-There should now be 8 records selected which we want to rename
+![image](/assets/images/FarmerTrials/open-refine-show-other-records.png)
 
-![image](/assets/images/FarmerTrials/open-refine-15.png)
+>In this example, we will leave these 2 records as they are. In the future, we would ideally want to assign them a unique farmername, so we can uniquely identify them in future studies within this network.
 
-We could do this manually, or altogether by using a custom transformation:
+### Isolate the duplicates for removal
 
-![image](/assets/images/FarmerTrials/open-refine-15a.png){:class="size--medium"}
+To select all the duplicate records, hover over the farmernames in the facet and click **include**. 
 
-![image](/assets/images/FarmerTrials/open-refine-15b.png){:class="size--large"}
+![image](/assets/images/FarmerTrials/open-refine-include-in-selection.png)
+
+We now have 14 selected records. Before we remove these records, we should log the form_IDs. To do this, we can export the current selection as a .csv file:
+
+![image](/assets/images/FarmerTrials/open-refine-export-duplicates.png)
+
+This will prompt an automatic download to your default 'downloads' folder. We should then rename this file and store it in our project folder so we can refer to it later. So, find the file, rename it to **hh_info_duplicates** and save it into your project folder.
+
+Now, we can remove the 14 duplicate rows:
+
+![image](/assets/images/FarmerTrials/open-refine-delete-all-duplicates.png)
 
 ### Tip: Undo / Redo
 
@@ -142,7 +151,7 @@ If for any reason you make a mistake you can undo transformations from the _Undo
 
 ## 3. Export your data to csv
 
-Now that our data is clean we want to import it back into our database. The easiest way to do this is to export it as a csv, which we will then import into our database.
+Now that our data is clean we want to import it back into our database. The easiest way to do this is to export it as a csv, which we will then import into our database. Ensure you have removed and facets or filters, then export the data:
 
 ![image](/assets/images/FarmerTrials/open-refine-17.png)
 
@@ -164,13 +173,13 @@ Now we can import the new data by clicking on _Tools_ and _Import csv file_
 
 The default settings will most likely need to be changed
 
-![image](/assets/images/FarmerTrials/open-refine-19a.png)
+![image](/assets/images/FarmerTrials/open-refine-import-back-to-heidi.png)
 
 You might receive an error message, which will also appear at the bottom of Heidi. Read the messages to understand what the issue is and whether it is critical. The data will still be imported, but if you want to fix the issues you can reimport. Otherwise you can simply close the message.
 
 ![image](/assets/images/FarmerTrials/open-refine-20.png)
 
-Finally you can click on the _refresh_ button to see your imported data. This time there should only be 173 rows.
+Finally you can click on the _refresh_ button to see your imported data. This time there should only be 168 rows.
 
 ![image](/assets/images/FarmerTrials/open-refine-21.png)
 
