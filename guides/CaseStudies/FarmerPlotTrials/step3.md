@@ -52,7 +52,7 @@ Click _Apply Changes_ to finish creating the link. You will see the link represe
 
 We have not yet linked our preference data to the other tables. This is more challenging as there is not a natural one-to-one or many-to-one relationship between the data in this table and any others.
 
-We could consider trying to join by _farmername_, however as both the prefrence_data and hh_info do not contain information about all of the same farmers (and also contain duplicates), additional steps must be taken to first remove the duplicate entries and then add an additional table that can hold a list of all farmers from both tables.
+We could consider trying to join by _farmername_. However, as both the prefrence_data and hh_info do not contain information about all of the same farmers (and also contain duplicates), additional steps must be taken to first remove the duplicate entries and then add an additional table that can hold a list of all farmers from both tables.
 
 ![image](/assets/images/FarmerTrials/dbforge-8.png)
 
