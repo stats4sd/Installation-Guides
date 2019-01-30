@@ -86,7 +86,10 @@ Once installed, the installer will prompt you to configure some of the component
 >
 >While this is not strictly needed, especially on a local server where you are likely to be the only person accessing the server, it's good practice to only use your root account for server updates.
 >
->You can create a new user for yourself on the Accounts and Roles config page. You can also create an account later, through the command line or via an SQL client like Heidi.
+>You can create a new user for yourself on the Accounts and Roles config page. 
+>![image](/assets/images/MySQL/create-new-user.png){:class='size--large'}
+>
+>You can also create an account later, through the command line or via an SQL client like Heidi.
 >
 >Even though you will not log in as **root** regularly, it is very important to keep that password saved somewhere, as you will need **root** for user management, creating new databases and other server-level tasks in the future.
 
@@ -124,4 +127,4 @@ To add a new component, click the Add button. You will be presented with a list 
 
 The Reference manual itself is huge, so here are a few specific sections that may be of use:
 - [Installing MySQL on Windows](https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html){:target='_blank'} - This provides more in-depth notes about the various options available at install time.
-- [Tutorial](https://dev.mysql.com/doc/refman/8.0/en/tutorial.html) - This focuses on using mySQL via the command line, so is only recommended for advanced users.
+- [Tutorial - Using MySQL via the Command Line](https://dev.mysql.com/doc/refman/8.0/en/tutorial.html) - This tutorial is recommended for advanced users who want to interact with mySQL via the command line or through scripts.
