@@ -251,6 +251,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-github-metadata
   minima (~> 2.0)
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.17.1

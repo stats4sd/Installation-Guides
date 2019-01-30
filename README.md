@@ -24,6 +24,9 @@ Q. Why does my scss have errors (deprecated)?
 A. If you are using VSCode then linter will throw errors due to jekyll front matter at top of scss,
 see http://talk.jekyllrb.com/t/fixing-vscode-scss-linting-errors-on-front-matter/1710 to fix
 
+Q. Livereload doesn't work on windows - help! (?)
+A. See advice here: https://httpain.com/blog/jekyll-live-reload-windows/
+
 ### General Updates
 
 **2018-11-08:** We are trialling display of the site through github pages and jekyll. To preview locally [install jekyll](https://jekyllrb.com/docs/installation) and then run `bundle install` to install dependecies. Preview the site with:

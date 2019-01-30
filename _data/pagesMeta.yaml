@@ -71,13 +71,16 @@ sectionPages:
         - title: Importing the raw data
           type: "path"
           url: "/step-2"
-        - title: Cleaning the data
+        - title: Defining relationships
           type: "path"
           url: "/step-3"
-        - title: Extracting data for analysis
+        - title: Cleaning the data
           type: "path"
           url: "/step-4"
-        - title: Generating outputs
+        - title: Extracting data for analysis
           type: "path"
           url: "/step-5"
+        - title: Generating outputs
+          type: "path"
+          url: "/step-6"
           disabled: true
