@@ -32,15 +32,17 @@ Repeat this process until you have backups of the raw data in all of your tables
 ## 1. Create a new project in OpenRefine
 
 When you open OpenRefine you should see the project start screen.
-We will create a new project and import our original excel data.
+We will create a new project and connect to our database directly.
 
-![image](/assets/images/FarmerTrials/open-refine-1.png){:class="size--large"}
+![image](/assets/images/FarmerTrials/open-refine-connect-to-db.png)
 
-Click **Next**
+After a successful connection, OpenRefine shows a query editor, which allows you to specify which data to select from the database. We want all the hh_info data, so complete the query as shown: **SELECT * FROM hh_info**
 
-You will see a preview of your data. By default it will try to incorrectly merge all of the sheets into a single file, and so we must make sure only to select a single sheet. We will first use the `hh_info` sheet
+![image](/assets/images/FarmerTrials/open-refine-query-db-table.png){:class="size--medium-large"}
 
-![image](/assets/images/FarmerTrials/open-refine-2.png)
+You will see a preview of your data. Check that you have the columns you expect.
+
+![image](/assets/images/FarmerTrials/open-refine-preview-from-db.png)
 
 When the correct data is set and project named you can click **Create Project** to proceed
 
@@ -183,8 +185,23 @@ Finally you can click on the _refresh_ button to see your imported data. This ti
 
 ![image](/assets/images/FarmerTrials/open-refine-21.png)
 
+## 5. Remove duplicate records from plot_data
+
+Finally, we need to resolve the issue of the records we deleted. We deleted 14 records from hh_info. We need to also **delete the corresponding records from plot_data**. We can do this within Heidi. 
+
+Select the plot_data table. Using Heidi's filter, we can add a statement to only show records where the form_ID is in the list of deleted records. Using the list we saved earlier, create the following filter: 
+
+![Add Image of displaying data and filtering]
+
+`form_ID in (116,121,127,134,140,142,172,179,185,186,246,247,335,345);`
+
+Apply this filter to only see records where the form_ID is one of the listed numbers. Then, we can simply select all and delete. 
+
+![Add Image of deletion process]
+
+
 ## 5. Repeat the process for all other datasets
 
-You should repeat this process for both _plot_data_ and _preference_data_ datasets, and try to remove as many inconsistencies as possible.
+You should this process of cleaning for both _plot_data_ and _preference_data_ datasets, and try to remove as many inconsistencies as possible.
 
 In the [next step](/case-study/farmer-plot-trials/step-4) we will link the data together using relationships.
