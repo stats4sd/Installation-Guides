@@ -58,4 +58,4 @@ We could consider trying to join by _farmername_, however as both the prefrence_
 
 This is beyond the scope of this example, however if you want more information on how this can be achieved then you can search online or feel free to contact us.
 
-    In the [next step](/case-study/farmer-plot-trials/step-5), we will be using queries to merge data from all of these datasets together for use in our analysis.
+In the [next step](/case-study/farmer-plot-trials/step-5), we will be using queries to merge data from all of these datasets together for use in our analysis.
