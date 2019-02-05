@@ -2,63 +2,61 @@
 layout: default
 section: Case Study
 subsection: Farmer Plot Trials
-title: Cleaning the data
+title: Defining relationships
 permalink: /case-study/farmer-plot-trials/step-4
 ---
 
-# Cleaning the data
+# Defining relationships
 
-In this step we will using [OpenRefine](/tools/open-refine) to clean our trial data and repopulate our database.
+In this step we will build links between the tables. This will enable us to extract information from both at the same time during querying, and will also help ensure we don't have missing data in our database in the future. We will be using the software <a href="/tools/db-forge" target="_blank">dbForge</a>
 
-If you do not have it installed you can follow the link to the tools page.
+## 1. Open dbForge
 
-## 0. Backup the original _raw_ data
+Whilst it is possible to do everything using Heidi, dbForge offers a nice visual tool to create and view relationships. Anything created here will exist as part of our database, and so still be available to Heidi.
 
-It is good practice to always retain a copy of original data in case you ever need to review or undo changes.
-As such for each of our tables we will make a copy called _raw_, which we **will not ever make changes to**
+![image](/assets/images/FarmerTrials/dbforge-1.png)
 
-For each table in your database you should _right-click_ on the table and select _Create new_ and _Table copy_
+## 2. Create a new database diagram
 
-![image](/assets/images/FarmerTrials/data-backup-1.png)
+The diagram will allow us to visually represent links between tables. You can access it from the _Database Design_ tab
 
-This will prompt you to provide a name for you new table. It is recommend you keep the original name and add _\_raw_ to the end of the name
+![image](/assets/images/FarmerTrials/dbforge-2.png)
 
-![image](/assets/images/FarmerTrials/data-backup-2.png){:class="size--medium"}
+## 3. Add your tables to the diagram
 
-Repeat this process until you have backups of the raw data in all of your tables.
+Tables are listed in the left-hand side. You can add these to the diagram using drag and drop, or by _right-click_ -> _send to_ -> _database diagram_
 
-![image](/assets/images/FarmerTrials/data-backup-3.png){:class="size--medium"}
+![image](/assets/images/FarmerTrials/dbforge-3.png)
 
-## 1. Create a new project in OpenRefine
+If your tables show up too small you can resize them and arrange the diagram to better-fit the available space.
 
-When you open OpenRefine you should see the project start screen.
-We will create a new project and import our original excel data.
+![image](/assets/images/FarmerTrials/dbforge-4.png)
 
-![image](/assets/images/FarmerTrials/open-refine-1.png){:class="size--large"}
+## 4. Add your first database relationship
 
-Click **Next**
+We will define a relationship from _plot_data_ to _hh_info_. We know that these tables are linked by the _form_ID_ field, and that for each household there can be multiple plots. Therefore we will be using a _many-to-one_ relationship, starting from plot_data (many) and ending with hh_info (one)
 
-You will see a preview of your data. By default it will try to incorrectly merge all of the sheets into a single file, and so we must make sure only to select a single sheet. We will first use the `hh_info` sheet
+Select the _New Relation_ tool, then draw a line from the form_ID field in plot_data to the form_ID field in hh_info.
 
-![image](/assets/images/FarmerTrials/open-refine-2.png)
+![image](/assets/images/FarmerTrials/dbforge-5.png)
 
-When the correct data is set and project named you can click **Create Project** to proceed
+A popup window will appear to confirm the relationship information. If everything was done correctly you should see the following information.
 
-## 2. Check each column for inconsistency
+![image](/assets/images/FarmerTrials/dbforge-6.png){:class="size--medium"}
 
-One of the powers of openRefine comes from quickly identifying inconsistencies within a column of data. To do this we select the column and tell the software what type of data, or _facet_, we are expecting. For example this might be _Text_ or _Numberic_. We can then do analysis on the data.
+Click _Apply Changes_ to finish creating the link. You will see the link represented by a solid line on the diagram.
 
-It is good practice to look at every column of your data. For this example we will just look at a few.
+![image](/assets/images/FarmerTrials/dbforge-7.png){:class="size--medium"}
 
-### a. ngo_name
+## 5. Creating more relationships
 
-Data collectors were asked to type the name of the NGO they were working with. To analyse the results we first click on the dropdown menu next to the column header. The NGO names are a text field and so we should select the _text_ facet.
+We have not yet linked our preference data to the other tables. This is more challenging as there is not a natural one-to-one or many-to-one relationship between the data in this table and any others.
 
-![image](/assets/images/FarmerTrials/open-refine-3.png)
+We could consider trying to join by _farmername_, however as both the prefrence_data and hh_info do not contain information about all of the same farmers (and also contain duplicates), additional steps must be taken to first remove the duplicate entries and then add an additional table that can hold a list of all farmers from both tables.
 
-You will see a new menu appear on the left, showing the different names of NGOs and how many rows of data contain each name
+![image](/assets/images/FarmerTrials/dbforge-8.png)
 
-![image](/assets/images/FarmerTrials/open-refine-4.png)
+This is beyond the scope of this example, however if you want more information on how this can be achieved then you can search online or feel free to contact us.
 
 We can see from the data that there is both the NGO 'AVENE' as well as 'avene'. This is an error.
 
