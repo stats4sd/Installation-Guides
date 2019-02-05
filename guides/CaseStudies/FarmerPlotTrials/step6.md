@@ -106,3 +106,11 @@ _Prevalence of striga for each treatment by county_
 ![image](/assets/images/FarmerTrials/voyager-12.png)
 
 This chart shows that Kisumu had no _red_light_ cases within _FarmerOwnPractice_, and few within any other treatments. We can also see that in Vihiga _FarmerOwnPractice_ had high numbers of _red_light_ cases and all interventions low numbers.
+
+Now we have our final chart all that is left to do is export it. Unfortunately the software does not currently have the ability to export the visualisations to an image file (hopefully future versions will), so for now the easiest way is just take a screenshot and crop appropriately
+
+![image](/assets/images/FarmerTrials/voyager-10.png)
+
+From the chart we can see that the highest prevalence of striga was within the _FarmerOwnPractice_ treatment, _Kisumu_ had low rates of striga throughout all interventions and both _lablab_ and _manure_ had very few _red_light_ cases.
+
+We could of course quickly build more visualisations to explore the data in other ways.
