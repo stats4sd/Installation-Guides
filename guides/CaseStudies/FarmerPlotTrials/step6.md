@@ -18,6 +18,8 @@ If you do not have the tool installed follow the link above for instructions.
 
 ## 2. Import our data
 
+Download link if not generated
+
 ## 3. Create our first visualisation
 
 ## 4. Explore further visualisations
