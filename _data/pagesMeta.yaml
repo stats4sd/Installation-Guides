@@ -83,4 +83,4 @@ sectionPages:
         - title: Generating outputs
           type: "path"
           url: "/step-6"
-          disabled: true
+          #disabled: true
