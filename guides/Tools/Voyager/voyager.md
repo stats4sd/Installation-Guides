@@ -40,7 +40,7 @@ Note, as this is not officially licenses you will see a warning message when run
 
 For an example of using the tool view click the link below to view the relevant section of the example case study.
 
-### [Example 1 - Analysis of plot yield data](/case-study/farmer-plot-trials/step-5)
+### [Example 1 - Analysis of plot yield data](/case-study/farmer-plot-trials/step-6)
 
 # Further References {#references}
 

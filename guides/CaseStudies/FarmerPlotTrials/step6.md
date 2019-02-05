@@ -81,6 +81,32 @@ Instead we will simply pick the closest-matching preset colour scheme. _Set2_ sh
 
 ## 5. Export generated charts
 
+Now we have our final chart all that is left to do is export it. Unfortunately the software does not currently have the ability to export the visualisations to an image file (hopefully future versions will), so for now the easiest way is just take a screenshot and crop appropriately.
+
+_Prevalence of striga for each county by treatment_
+
+![image](/assets/images/FarmerTrials/voyager-10.png)
+
+From the chart we can see that the highest prevalence of striga was within the _FarmerOwnPractice_ treatment. It also appears that _Kisumu_ had low rates of striga throughout all interventions and both _lablab_ and _manure_ had very few _red_light_ cases overall.
+
+We could of course quickly build more visualisations to explore the data in other ways.
+
+<hr>
+
+_Prevalence of striga for each treatment_
+
+![image](/assets/images/FarmerTrials/voyager-11.png){:class="size--medium-large"}
+
+It is clearer from this chart that Lablab and Manure had the fewest red_light cases.
+
+<hr>
+
+_Prevalence of striga for each treatment by county_
+
+![image](/assets/images/FarmerTrials/voyager-12.png)
+
+This chart shows that Kisumu had no _red_light_ cases within _FarmerOwnPractice_, and few within any other treatments. We can also see that in Vihiga _FarmerOwnPractice_ had high numbers of _red_light_ cases and all interventions low numbers.
+
 Now we have our final chart all that is left to do is export it. Unfortunately the software does not currently have the ability to export the visualisations to an image file (hopefully future versions will), so for now the easiest way is just take a screenshot and crop appropriately
 
 ![image](/assets/images/FarmerTrials/voyager-10.png)
