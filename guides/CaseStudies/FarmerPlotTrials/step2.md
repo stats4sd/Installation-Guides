@@ -39,21 +39,11 @@ Finally double click on the connection created to open it
 
 ## 3. Import the data into MySQL
 
-We will use excel to send data into our database. The first thing we need to do is create a new _schema_, essentially an object that holds information about our database.
+We will use excel to send data into our database. Assuming you have already created your database in Heidi, you should be able to see it under "Schemas":
 
-### a. Create a schema
+![image](/assets/images/MySQL/mysql-for-excel-select-schema.png){:class='size--large'}
 
-Click on **Create New Schema**
-
-![image](/assets/images/FarmerTrials/create-schema-1.png){:class="size--small"}
-
-Provide a name and set the collation as **utf8_unicode_ci**
-
-![image](/assets/images/FarmerTrials/create-schema-2.png){:class="size--large"}
-
-Double click the created schema to open
-
-![image](/assets/images/FarmerTrials/create-schema-3.png){:class="size--small"}
+Double click the database to select it.
 
 ### a. Import household info data
 
@@ -63,9 +53,9 @@ Select all the data and click **Export Excel Data to New Table**
 
 ![image](/assets/images/FarmerTrials/export-data-1.png)
 
-In the window that appears you should be able to keep most of the default settings, however as our data already has a column of _unique_ identifiers (form*ID) we can use this for our \_primary key*
+In the window that appears you should be able to keep most of the default settings, however as our data already has a column of _unique_ identifiers (form*ID) we can use this for our _primary key_
 
-![image](/assets/images/FarmerTrials/export-data-2.png)
+![image](/assets/images/MySQL/mysql-for-excel-export-hh-info.png)
 
 > **IMPORTANT:** Excel will likely make some mistakes when defininng your data formats.
 > Here are <a href="/resources/mysql-for-excel-tips" target="_blank">some quick tips to ensure your data maintains the correct format</a>
