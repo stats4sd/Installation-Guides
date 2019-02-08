@@ -189,16 +189,19 @@ Finally you can click on the _refresh_ button to see your imported data. This ti
 
 Finally, we need to resolve the issue of the records we deleted. We deleted 14 records from hh_info. We need to also **delete the corresponding records from plot_data**. We can do this within Heidi. 
 
-Select the plot_data table. Using Heidi's filter, we can add a statement to only show records where the form_ID is in the list of deleted records. Using the list we saved earlier, create the following filter: 
+Select the plot_data table. Using Heidi's filter, we can add a statement to only show records where the form_ID is in the list of deleted records. Using the list we saved earlier, create the following filter: `form_ID in (116,121,127,134,140,142,172,179,185,186,246,247,335,345)`
 
-![Add Image of displaying data and filtering]
+![image](/assets/images/Heidi/heidi-apply-filter.png)
 
-`form_ID in (116,121,127,134,140,142,172,179,185,186,246,247,335,345);`
+>Note there is no semi-colon at the end of this filter. If you add a semi-colon you will get an error message and the filter will not work.
 
-Apply this filter to only see records where the form_ID is one of the listed numbers. Then, we can simply select all and delete. 
+Apply this filter to only see records where the form_ID is one of the listed numbers. You should see 45 matching rows. Then, go to Edit -> Select all (or press "Ctrl + a") to select all matching rows.
 
-![Add Image of deletion process]
+![image](/assets/images/Heidi/heidi-select-all.png){:class="size--small"}
 
+Then right-click within the table and click "Delete selected row(s)" (or press Ctrl + Del keys)
+
+![image](/assets/images/Heidi/heidi-delete-selected.png){:class="size--small"}
 
 ## 5. Repeat the process for all other datasets
 

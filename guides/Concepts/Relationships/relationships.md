@@ -11,7 +11,7 @@ permalink: /concepts/relationships
 
 Having a set of data tables is great, but the real power of SQL comes when you start linking these tables together.
 
-Before you can link two tables in SQL, you must have a good understanding of what the data in those tables actually represents. See the best practice guide on [building your tables](/resources/building-tables){:target="\_blank"} for help with this.
+Before you can link two tables in SQL, you must have a good understanding of what the data in those tables actually represents. See the best practice guide on [building your tables](/concepts/building-tables){:target="\_blank"} for help with this.
 
 ## Types of relationship
 
@@ -51,7 +51,7 @@ Instead, we create a link table - a table that sits in-between the 2 main tables
 
 ![image](/assets/images/relationships/many-many.png)
 
-So, evey "many to many" relationship is actually modelled as 2 different many to one relationships. (In the graphic, read each relationship starting from the middle).
+So, every "many to many" relationship is actually modelled as 2 different many to one relationships. (In the graphic, read each relationship starting from the middle).
 
 This link table is often called a 'pivot' table by database managers, but "link table" is also understood.
 
