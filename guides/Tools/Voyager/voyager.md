@@ -14,7 +14,7 @@ Voyager is a data exploration tool to help create and disover visualisations for
 You can add your data from a csv file and then start to explore different visualisations,
 specifying for example a variable for the x-axis and seeing different ways to represent the data. The available charts change depending on whether your data is numeric or category, and you can add additional information through use of colour, shape and facets.
 
-![image](/assets/images/voyager/screenshot1.png)
+![image](/assets/images/Voyager/screenshot1.png)
 
 # Why use it? {#why}
 
